@@ -340,7 +340,7 @@ $pdo->prepare("INSERT INTO users (username, password, role) VALUES ('admin', ?, 
         }
     </style>
     <div class="footer-bar">
-        System Developed by Digital Division of Chief Secretary Office (NWP)
+        Powered by Digital Division | Chief Secretariat - North Western Province
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
