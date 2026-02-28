@@ -1,55 +1,61 @@
 <?php
+// Session එක start වෙලා නැත්නම් විතරක් start කරන්න
+if (session_status() === PHP_SESSION_NONE) {
+    session_start();
+}
+
 require '../../core/config.php';
 
+// Admin ද කියලා චෙක් කිරීම
 if (!isset($_SESSION['user']) || $_SESSION['user']['role'] !== 'admin') {
     die('Access denied');
 }
 
-// OpenShift/Linux වල mysqldump තියෙන නිවැරදි Path එක
-$dump_path = '/usr/bin/mysqldump'; 
+// 1. Database විස්තර (config.php එකෙන් එන විචල්‍යයන් භාවිතා කරන්න)
+// මෙහිදී $host, $user, $pass, $db යන ඒවා config.php හි ඇති බව සහතික කරගන්න
+$db_host = $host;
+$db_user = $user;
+$db_pass = $pass;
+$db_name = $db;
 
-// Linux වලදී file_exists() වෙනුවට is_executable() පාවිච්චි කිරීම වඩාත් සුදුසුයි
-if (!is_executable($dump_path)) {
-    // සමහරවිට Path එක වෙනස් විය හැකිනම් කෙලින්ම නම පමණක් පාවිච්චි කර බලමු
-    $dump_path = 'mysqldump'; 
-}
+// 2. Backup ෆයිල් එකේ නම සහ තාවකාලික ගබඩාව (/tmp)
+$backup_filename = 'meetme_backup_' . date('Y-m-d_Hi') . '.sql';
+$temp_file = '/tmp/' . $backup_filename;
 
-$backup_file = 'backup_' . date('Y-m-d_H-i-s') . '.sql';
-// Linux වල temp directory එක සාමාන්‍යයෙන් /tmp/
-$temp_path = sys_get_temp_dir() . '/' . $backup_file;
+// 3. Command එක සැකසීම
+// සටහන: -p සහ password එක අතර හිස්තැනක් නොතිබිය යුතුය
+// 2>&1 මගින් errors ද output එකටම ලබා ගනී
+$cmd = "/usr/bin/mysqldump --no-tablespaces --host=" . escapeshellarg($db_host) . 
+       " --user=" . escapeshellarg($db_user) . 
+       " --password=" . escapeshellarg($db_pass) . 
+       " " . escapeshellarg($db_name) . " > " . $temp_file . " 2>&1";
 
-// Command එක සැකසීම - මෙහිදී host එක ලෙස 'meetmedb' යන නම config.php හරහා ලැබෙනවා
-// Linux Shell එකේදී password එක සහ අනෙක්වා 'escapeshellarg' හරහා ආරක්ෂිතව යෙදිය යුතුයි
-$cmd = $dump_path . 
-       ' --user=' . escapeshellarg($user) . 
-       ' --password=' . escapeshellarg($pass) . 
-       ' --host=' . escapeshellarg($host) . 
-       ' ' . escapeshellarg($db) . 
-       ' > ' . escapeshellarg($temp_path) . ' 2>&1';
-
-// Execute
+// 4. Execute කිරීම
 exec($cmd, $output, $return_var);
 
-// දෝෂ පරීක්ෂාව
+// 5. දෝෂ පරීක්ෂාව
 if ($return_var !== 0) {
-    $error_msg = implode("\n", $output);
-    die("Backup failed. Error code: $return_var. <br>Details: <pre>$error_msg</pre>");
+    $error_details = implode("\n", $output);
+    // ආරක්ෂාව සඳහා password එක error එකේ පෙන්වීම වැලැක්වීමට path එක පමණක් පෙන්වමු
+    die("Backup Failed! <br>Error Code: $return_var <br>Details: <pre>$error_details</pre>");
 }
 
-// Download කිරීමේ කොටස
-if (file_exists($temp_path) && filesize($temp_path) > 0) {
+// 6. Download සහ ලියාපදිංචිය
+if (file_exists($temp_file) && filesize($temp_file) > 0) {
     header('Content-Description: File Transfer');
-    header('Content-Type: application/octet-stream');
-    header('Content-Disposition: attachment; filename="' . basename($backup_file) . '"');
+    header('Content-Type: application/sql');
+    header('Content-Disposition: attachment; filename="' . $backup_filename . '"');
     header('Expires: 0');
     header('Cache-Control: must-revalidate');
     header('Pragma: public');
-    header('Content-Length: ' . filesize($temp_path));
+    header('Content-Length: ' . filesize($temp_file));
     
-    // ෆයිල් එක කියවා අවසානයේ එය සේවාදායකයෙන් මකා දැමීම
-    readfile($temp_path);
-    unlink($temp_path);
+    // ෆයිල් එක කියවා අවසානයේ එය මකා දැමීම
+    ob_clean();
+    flush();
+    readfile($temp_file);
+    unlink($temp_file); 
     exit;
 } else {
-    die("Backup failed. The generated file is empty or not found.");
+    die("Error: The backup file was not created or is empty.");
 }
