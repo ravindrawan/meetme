@@ -1,0 +1,4 @@
+#!/bin/bash
+/usr/libexec/s2i/assemble
+echo "-- Installing MySQL Client --"
+yum install -y mysql
