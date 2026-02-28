@@ -1,4 +1,4 @@
-FROM image-registry.openshift-image-registry.svc:5000/openshift/php:8.0-ubi8
+FROM registry.redhat.io/ubi8/php-80:latest
 USER root
 RUN yum install -y mysql && yum clean all
 COPY upload/src /var/www/html/
