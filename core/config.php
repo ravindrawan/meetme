@@ -1,8 +1,8 @@
 <?php
-$host = 'localhost';
-$db   = 'vms_nw';
-$user = 'root';
-$pass = 's&sdigital';
+$host = 'meetmedb';
+$db   = 'meetmedb';
+$user = 'admin';
+$pass = 'RaviDb@2026';
 
 // Define base paths
 if (!defined('BASE_URL')) define('BASE_URL', 'http://localhost/vms_nw/');
