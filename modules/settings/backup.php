@@ -1,61 +1,80 @@
 <?php
-// Session එක start වෙලා නැත්නම් විතරක් start කරන්න
-if (session_status() === PHP_SESSION_NONE) {
-    session_start();
-}
-
 require '../../core/config.php';
 
-// Admin ද කියලා චෙක් කිරීම
-if (!isset($_SESSION['user']) || $_SESSION['user']['role'] !== 'admin') {
+if (!hasPrivilege('tile_backup')) {
     die('Access denied');
 }
 
-// 1. Database විස්තර (config.php එකෙන් එන විචල්‍යයන් භාවිතා කරන්න)
-// මෙහිදී $host, $user, $pass, $db යන ඒවා config.php හි ඇති බව සහතික කරගන්න
-$db_host = $host;
-$db_user = $user;
-$db_pass = $pass;
-$db_name = $db;
+$backup_file = 'backup_' . date('Y-m-d_H-i-s') . '.sql';
+$temp_path = sys_get_temp_dir() . '/' . $backup_file;
 
-// 2. Backup ෆයිල් එකේ නම සහ තාවකාලික ගබඩාව (/tmp)
-$backup_filename = 'meetme_backup_' . date('Y-m-d_Hi') . '.sql';
-$temp_file = '/tmp/' . $backup_filename;
-
-// 3. Command එක සැකසීම
-// සටහන: -p සහ password එක අතර හිස්තැනක් නොතිබිය යුතුය
-// 2>&1 මගින් errors ද output එකටම ලබා ගනී
-$cmd = "/usr/bin/mysqldump --no-tablespaces --host=" . escapeshellarg($db_host) . 
-       " --user=" . escapeshellarg($db_user) . 
-       " --password=" . escapeshellarg($db_pass) . 
-       " " . escapeshellarg($db_name) . " > " . $temp_file . " 2>&1";
-
-// 4. Execute කිරීම
-exec($cmd, $output, $return_var);
-
-// 5. දෝෂ පරීක්ෂාව
-if ($return_var !== 0) {
-    $error_details = implode("\n", $output);
-    // ආරක්ෂාව සඳහා password එක error එකේ පෙන්වීම වැලැක්වීමට path එක පමණක් පෙන්වමු
-    die("Backup Failed! <br>Error Code: $return_var <br>Details: <pre>$error_details</pre>");
+// Determine mysqldump command based on OS and environment
+if (strtoupper(substr(PHP_OS, 0, 3)) === 'WIN') {
+    $dump_path = 'C:\\xampp\\mysql\\bin\\mysqldump.exe';
+    if (!file_exists($dump_path)) {
+        // Fallback for Windows if not XAMPP
+        $dump_path = 'mysqldump';
+    }
+} else {
+    // Linux/Mac
+    $dump_path = 'mysqldump';
 }
 
-// 6. Download සහ ලියාපදිංචිය
-if (file_exists($temp_file) && filesize($temp_file) > 0) {
+// Use escapeshellarg to handle special characters (like & in the password) safely
+// Note: On Windows, escapeshellarg surrounds with double quotes, which is what we want for CMD.
+$cmd = sprintf(
+    '"%s" --user=%s --password=%s --host=%s %s > "%s" 2>&1',
+    $dump_path,
+    escapeshellarg($user), // Quotes the value: "root"
+    escapeshellarg($pass), // Quotes the value: "s&sdigital"
+    escapeshellarg($host),
+    escapeshellarg($db),
+    $temp_path
+);
+
+// Remove the outer quotes that escapeshellarg adds if we are interpolating them into a string that we might want to control more 
+// specifically, OR just rely on escapeshellarg.
+// However, mysqldump syntax is often --password="pass". escapeshellarg gives "pass". 
+// So: --password="pass" becomes --password=""pass"" if I add my own quotes? 
+// No, sprintf above: --password=%s becomes --password="s&sdigital". This looks correct.
+// WAIT: escapeshellarg on Windows might replace % with space? No. 
+// Let's stick to manual quoting which is more predictable for non-shell execution or simple exec.
+// But escapeshellarg is best practice.
+// Let's rebuild the command string carefully.
+
+$cmd = '"' . $dump_path . '"' . 
+       ' --user=' . escapeshellarg($user) . 
+       ' --password=' . escapeshellarg($pass) . 
+       ' --host=' . escapeshellarg($host) . 
+       ' ' . escapeshellarg($db) . 
+       ' > ' . escapeshellarg($temp_path) . ' 2>&1';
+
+// Execute
+exec($cmd, $output, $return_var);
+
+if ($return_var !== 0) {
+    // Return detailed error
+    $error_msg = implode("\n", $output);
+    die("Backup failed. Error code: $return_var. Details: <pre>$error_msg</pre>");
+}
+
+// Download
+if (file_exists($temp_path)) {
+    if (filesize($temp_path) == 0) {
+        unlink($temp_path);
+        die("Backup failed. The generated file is empty.");
+    }
+    
     header('Content-Description: File Transfer');
-    header('Content-Type: application/sql');
-    header('Content-Disposition: attachment; filename="' . $backup_filename . '"');
+    header('Content-Type: application/octet-stream');
+    header('Content-Disposition: attachment; filename="' . basename($backup_file) . '"');
     header('Expires: 0');
     header('Cache-Control: must-revalidate');
     header('Pragma: public');
-    header('Content-Length: ' . filesize($temp_file));
-    
-    // ෆයිල් එක කියවා අවසානයේ එය මකා දැමීම
-    ob_clean();
-    flush();
-    readfile($temp_file);
-    unlink($temp_file); 
+    header('Content-Length: ' . filesize($temp_path));
+    readfile($temp_path);
+    unlink($temp_path);
     exit;
 } else {
-    die("Error: The backup file was not created or is empty.");
+    die("Backup file creation failed. Output: " . implode("\n", $output));
 }

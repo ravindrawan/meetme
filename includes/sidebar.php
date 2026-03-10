@@ -24,6 +24,12 @@
         </li>
         <?php endif; ?>
 
+        <li>
+            <a href="<?= BASE_URL ?>modules/visitors/search.php" target="_blank" class="nav-link link-dark <?= (strpos($_SERVER['PHP_SELF'], 'visitors/search.php') !== false) ? 'active text-white' : '' ?>">
+                <i class="fas fa-search me-2"></i> Public Portal
+            </a>
+        </li>
+
         <?php if(hasPrivilege('tile_reports')): ?>
         <li>
             <a href="<?= BASE_URL ?>modules/reports/index.php" class="nav-link link-dark <?= (strpos($_SERVER['PHP_SELF'], 'reports/index.php') !== false) ? 'active text-white' : '' ?>">
@@ -109,7 +115,7 @@
         </li>
         <?php endif; ?>
 
-        <?php if (isset($_SESSION['user']['role']) && $_SESSION['user']['role'] === 'admin'): ?>
+        <?php if(hasPrivilege('tile_backup')): ?>
         <li>
             <a href="<?= BASE_URL ?>modules/settings/backup.php" class="nav-link link-dark <?= (strpos($_SERVER['PHP_SELF'], 'settings/backup.php') !== false) ? 'active text-white' : '' ?>">
                 <i class="fas fa-database me-2"></i> Backup

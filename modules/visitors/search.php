@@ -20,11 +20,17 @@ $translations = [
         'search_btn' => 'Search',
         'error_not_found' => 'We couldn\'t find any records for',
         'error_empty' => 'Please enter an ID Number or Visitor ID.',
+        'error_rate_limit' => 'Too many search attempts. Please try again later.',
         'visit_history' => 'Visit History',
         'no_records' => 'No visit records found.',
         'section' => 'Section',
         'officer' => 'Officer',
         'actions_taken' => 'Actions Taken',
+        'feedback_title' => 'Visitor Feedback',
+        'feedback_desc' => 'How was your experience?',
+        'feedback_comment' => 'Additional Comments (Optional)',
+        'submit_feedback' => 'Submit Feedback',
+        'feedback_success' => 'Thank you for your feedback!',
         'btn_en' => 'English',
         'btn_si' => 'Sinhala',
         'btn_ta' => 'Tamil'
@@ -37,11 +43,17 @@ $translations = [
         'search_btn' => 'සොයන්න',
         'error_not_found' => 'අපට කිසිදු වාර්තාවක් සොයාගත නොහැකි විය',
         'error_empty' => 'කරුණාකර හැඳුනුම්පත් අංකය හෝ අමුත්තාගේ අංකය ඇතුළත් කරන්න.',
+        'error_rate_limit' => 'සෙවුම් උත්සාහයන් වැඩියි. කරුණාකර පසුව නැවත උත්සාහ කරන්න.',
         'visit_history' => 'පැමිණීමේ ඉතිහාසය',
         'no_records' => 'කිසිදු පැමිණීමේ වාර්තාවක් හමු නොවීය.',
         'section' => 'අංශය',
         'officer' => 'නිලධාරි',
         'actions_taken' => 'ගනු ලැබූ ක්‍රියාමාර්ග',
+        'feedback_title' => 'අමුත්තන්ගේ ප්‍රතිපෝෂණය',
+        'feedback_desc' => 'ඔබගේ අත්දැකීම කෙසේද?',
+        'feedback_comment' => 'අමතර අදහස් (විකල්ප)',
+        'submit_feedback' => 'ප්‍රතිපෝෂණය යවන්න',
+        'feedback_success' => 'ඔබගේ ප්‍රතිපෝෂණයට ස්තූතියි!',
         'btn_en' => 'ඉංග්‍රීසි',
         'btn_si' => 'සිංහල',
         'btn_ta' => 'දෙමළ'
@@ -54,11 +66,17 @@ $translations = [
         'search_btn' => 'தேடு',
         'error_not_found' => 'எங்களால் எந்த பதிவுகளையும் காண முடியவில்லை',
         'error_empty' => 'தயவுசெய்து அடையாள அட்டை எண் அல்லது பார்வையாளர் எண்ணை உள்ளிடவும்.',
+        'error_rate_limit' => 'தேடல் முயற்சிகள் அதிகமாக உள்ளன. சிறிது நேரம் கழித்து மீண்டும் முயற்சிக்கவும்.',
         'visit_history' => 'வருகை வரலாறு',
         'no_records' => 'வருகை பதிவுகள் எதுவும் காணப்படவில்லை.',
         'section' => 'பிரிவு',
         'officer' => 'அதிகாரி',
         'actions_taken' => 'எடுக்கப்பட்ட நடவடிக்கைகள்',
+        'feedback_title' => 'பார்வையாளர் கருத்து',
+        'feedback_desc' => 'உங்கள் அனுபவம் எப்படி இருந்தது?',
+        'feedback_comment' => 'கூடுதல் கருத்துக்கள் (விருப்பமாக)',
+        'submit_feedback' => 'கருத்தை சமர்ப்பிக்க',
+        'feedback_success' => 'உங்கள் கருத்துக்கு நன்றி!',
         'btn_en' => 'ஆங்கிலம்',
         'btn_si' => 'சிங்களம்',
         'btn_ta' => 'தமிழ்'
@@ -70,80 +88,87 @@ $t = $translations[$lang] ?? $translations['en'];
 $visitor = null;
 $visits = [];
 $error = '';
-$search_query = '';
+$feedback_msg = '';
+$search_nic = '';
+$search_visit_id = '';
 
-if (isset($_POST['search'])) {
-    $search_query = trim($_POST['search_query']);
-    
-    if (!empty($search_query)) {
-        // Search by NIC or Visitor ID
-        // First try to find by NIC
-        $stmt = $pdo->prepare("SELECT * FROM visitors WHERE nic = ?");
-        $stmt->execute([$search_query]);
-        $visitor = $stmt->fetch();
+if (isset($_POST['submit_feedback'])) {
+    $fb_visit_id = trim($_POST['fb_visit_id']);
+    $fb_rating = (int)$_POST['rating'];
+    $fb_comment = trim($_POST['comment']);
 
-        if (!$visitor) {
-            // Try finding by Visit ID in visits table
-            $stmt = $pdo->prepare("SELECT nic FROM visits WHERE visit_id = ?");
-            $stmt->execute([$search_query]);
-            $found_nic = $stmt->fetchColumn();
-            
-            // If not found, try with padding (e.g. 434 -> 00000434)
-            if (!$found_nic) {
-                 $padded_id = str_pad($search_query, 8, '0', STR_PAD_LEFT);
-                 $stmt = $pdo->prepare("SELECT nic FROM visits WHERE visit_id = ?");
-                 $stmt->execute([$padded_id]);
-                 $found_nic = $stmt->fetchColumn();
-                 if($found_nic) $search_query = $padded_id; // Update query for later use
-            }
-            
-            if ($found_nic) {
-                 $stmt = $pdo->prepare("SELECT * FROM visitors WHERE nic = ?");
-                 $stmt->execute([$found_nic]);
-                 $visitor = $stmt->fetch();
-                 $is_visit_search = true; // Flag to indicate search was by Visit ID
-            }
+    // Check if feedback exists
+    $stmt = $pdo->prepare("SELECT id FROM visit_feedback WHERE visit_id = ?");
+    $stmt->execute([$fb_visit_id]);
+    if (!$stmt->fetch()) {
+        $stmt = $pdo->prepare("INSERT INTO visit_feedback (visit_id, rating, comment) VALUES (?, ?, ?)");
+        $stmt->execute([$fb_visit_id, $fb_rating, $fb_comment]);
+        $feedback_msg = $t['feedback_success'];
+    }
+}
+
+if (isset($_POST['search']) || isset($_POST['submit_feedback'])) {
+    $ip = $_SERVER['REMOTE_ADDR'];
+    $is_rate_limited = false;
+
+    if (isset($_POST['search'])) {
+        if (!checkRateLimit($pdo, $ip, 'search_attempt', 20, 10)) {
+            $error = "<i class='fas fa-ban'></i> " . $t['error_rate_limit'];
+            $is_rate_limited = true;
         }
+    }
 
-        if ($visitor) {
-            // Fetch visits
-            if (isset($is_visit_search) && $is_visit_search) {
-                 // If searched by Visit ID, show ONLY that visit
-                 $stmt = $pdo->prepare("SELECT v.*, s.section_name, COALESCE(o.name, 'Not Assigned') AS officer 
-                           FROM visits v 
-                           JOIN sections s ON v.section_id = s.id 
-                           LEFT JOIN officers o ON v.officer_id = o.id 
-                           WHERE v.visit_id = ?");
-                $stmt->execute([$search_query]);
+    if (!$is_rate_limited) {
+        $search_nic = trim($_POST['search_nic'] ?? $_POST['original_nic'] ?? '');
+        $search_visit_id = trim($_POST['search_visit_id'] ?? $_POST['original_visit_id'] ?? '');
+        
+        if (!empty($search_nic) && !empty($search_visit_id)) {
+            // Try to find visitor by NIC
+            $stmt = $pdo->prepare("SELECT * FROM visitors WHERE nic = ?");
+            $stmt->execute([$search_nic]);
+            $visitor = $stmt->fetch();
+
+            if ($visitor) {
+                // Find specific visit matching both NIC and Visit ID
+                $stmt = $pdo->prepare("
+                    SELECT v.*, s.section_name, COALESCE(o.name, 'Not Assigned') AS officer 
+                    FROM visits v 
+                    JOIN sections s ON v.section_id = s.id 
+                    LEFT JOIN officers o ON v.officer_id = o.id 
+                    WHERE v.nic = ? AND (v.visit_id = ? OR v.visit_id = ?)
+                ");
+                
+                $padded_id = str_pad($search_visit_id, 8, '0', STR_PAD_LEFT);
+                $stmt->execute([$search_nic, $search_visit_id, $padded_id]);
+                $visits = $stmt->fetchAll();
+
+                if (!empty($visits)) {
+                    // Fetch actions for the matched visit
+                    foreach ($visits as &$visit_ref) {
+                        $stmt_actions = $pdo->prepare("SELECT a.*, u.username as user_name 
+                                                     FROM actions a 
+                                                     LEFT JOIN users u ON a.user_id = u.id 
+                                                     WHERE a.visit_id = ? 
+                                                     ORDER BY a.action_datetime DESC");
+                        $stmt_actions->execute([$visit_ref['visit_id']]);
+                        $visit_ref['actions'] = $stmt_actions->fetchAll();
+
+                        $stmt_fb = $pdo->prepare("SELECT * FROM visit_feedback WHERE visit_id = ?");
+                        $stmt_fb->execute([$visit_ref['visit_id']]);
+                        $visit_ref['feedback'] = $stmt_fb->fetch();
+                    }
+                    unset($visit_ref);
+                } else {
+                     $visitor = null; // Don't show visitor info if visit ID doesn't match
+                     $error = "<i class='fas fa-exclamation-circle'></i> " . $t['error_not_found'] . " <strong>NIC: " . htmlspecialchars($search_nic) . ", Visit ID: " . htmlspecialchars($search_visit_id) . "</strong>. <br>";
+                }
+
             } else {
-                 // If searched by NIC, show all visits
-                 $stmt = $pdo->prepare("SELECT v.*, s.section_name, COALESCE(o.name, 'Not Assigned') AS officer 
-                           FROM visits v 
-                           JOIN sections s ON v.section_id = s.id 
-                           LEFT JOIN officers o ON v.officer_id = o.id 
-                           WHERE v.nic = ? ORDER BY v.visit_datetime DESC");
-                $stmt->execute([$visitor['nic']]);
+                 $error = "<i class='fas fa-exclamation-circle'></i> " . $t['error_not_found'] . " <strong>" . htmlspecialchars($search_nic) . "</strong>. <br>";
             }
-            $visits = $stmt->fetchAll();
-
-            // Fetch actions for each visit
-            foreach ($visits as &$visit_ref) {
-                $stmt_actions = $pdo->prepare("SELECT a.*, u.username as user_name 
-                                             FROM actions a 
-                                             LEFT JOIN users u ON a.user_id = u.id 
-                                             WHERE a.visit_id = ? 
-                                             ORDER BY a.action_datetime DESC");
-                $stmt_actions->execute([$visit_ref['visit_id']]);
-                $visit_ref['actions'] = $stmt_actions->fetchAll();
-            }
-            unset($visit_ref); // Break reference
-
         } else {
-             // User-friendly error message
-            $error = "<i class='fas fa-exclamation-circle'></i> " . $t['error_not_found'] . " <strong>" . htmlspecialchars($search_query) . "</strong>. <br>" . $t['error_empty'];
+            $error = $t['error_empty'];
         }
-    } else {
-        $error = $t['error_empty'];
     }
 }
 ?>
@@ -321,6 +346,30 @@ if (isset($_POST['search'])) {
         .status-completed { background-color: #d4edda; color: #155724; }
         .status-pending { background-color: #fff3cd; color: #856404; }
         .status-rejected { background-color: #f8d7da; color: #721c24; }
+        
+        .rating-stars {
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: flex-end;
+            gap: 10px;
+        }
+        .rating-stars input { display: none; }
+        .rating-stars label {
+            cursor: pointer;
+            font-size: 1.5rem;
+            color: #ccc;
+            transition: color 0.2s;
+        }
+        .rating-stars input:checked ~ label,
+        .rating-stars label:hover,
+        .rating-stars label:hover ~ label { color: #f39c12; }
+        .feedback-box {
+            background-color: #f8f9fa;
+            border-radius: 10px;
+            padding: 15px;
+            margin-top: 15px;
+            border: 1px solid #dee2e6;
+        }
 
         @media (max-width: 768px) {
             .top-bar { padding: 0 20px; height: auto; padding-top: 10px; padding-bottom: 10px; flex-direction: column; gap:10px; }
@@ -350,12 +399,18 @@ if (isset($_POST['search'])) {
             <div class="col-md-8">
                 <div class="search-card text-center">
                     <h3 class="search-title"><?= $t['check_history'] ?></h3>
-                    <form method="post" class="d-flex gap-2 justify-content-center flex-wrap">
-                        <input type="text" name="search_query" class="form-control form-control-lg w-75" placeholder="<?= $t['search_placeholder'] ?>" value="<?= htmlspecialchars($search_query) ?>" required>
-                        <button type="submit" name="search" class="btn btn-search btn-lg px-4"><i class="fas fa-search me-2"></i> <?= $t['search_btn'] ?></button>
+                    <form method="post" class="d-flex flex-column gap-3 justify-content-center align-items-center">
+                        <div class="d-flex w-100 gap-2 justify-content-center flex-wrap">
+                            <input type="text" name="search_nic" class="form-control form-control-lg" style="max-width:300px;" placeholder="NIC Number" value="<?= htmlspecialchars($search_nic) ?>" required>
+                            <input type="text" name="search_visit_id" class="form-control form-control-lg" style="max-width:300px;" placeholder="Visit ID" value="<?= htmlspecialchars($search_visit_id) ?>" required>
+                        </div>
+                        <button type="submit" name="search" class="btn btn-search btn-lg px-5 mt-2"><i class="fas fa-search me-2"></i> <?= $t['search_btn'] ?></button>
                     </form>
                     <?php if($error): ?>
                         <div class="alert alert-danger mt-3 mb-0" style="background: rgba(220, 53, 69, 0.2); color: #ffcdd2; border: 1px solid rgba(220, 53, 69, 0.3);"><?= $error ?></div>
+                    <?php endif; ?>
+                    <?php if($feedback_msg): ?>
+                        <div class="alert alert-success mt-3 mb-0" style="background: rgba(40, 167, 69, 0.2); color: #c3e6cb; border: 1px solid rgba(40, 167, 69, 0.3);"><i class="fas fa-check-circle me-2"></i><?= $feedback_msg ?></div>
                     <?php endif; ?>
                 </div>
             </div>
@@ -406,6 +461,43 @@ if (isset($_POST['search'])) {
                                                         <div class="text-muted small"><?= nl2br(htmlspecialchars($action['action_text'])) ?></div>
                                                     </div>
                                                 <?php endforeach; ?>
+                                            </div>
+                                        <?php endif; ?>
+
+                                        <?php if ($v['feedback']): ?>
+                                            <div class="feedback-box border-start border-4 border-warning">
+                                                <h6 class="text-muted mb-1" style="font-size: 0.9rem;"><i class="fas fa-star text-warning"></i> <?= $t['feedback_title'] ?></h6>
+                                                <div>
+                                                    <?php for($i = 1; $i <= 5; $i++): ?>
+                                                        <i class="fas fa-star <?= $i <= $v['feedback']['rating'] ? 'text-warning' : 'text-muted' ?>" style="font-size: 0.8rem;"></i>
+                                                    <?php endfor; ?>
+                                                </div>
+                                                <?php if($v['feedback']['comment']): ?>
+                                                    <p class="mb-0 mt-2 text-dark small">"<?= nl2br(htmlspecialchars($v['feedback']['comment'])) ?>"</p>
+                                                <?php endif; ?>
+                                            </div>
+                                        <?php else: ?>
+                                            <div class="feedback-box mt-3 border-start border-4 border-primary">
+                                                <h6 class="fw-bold text-primary mb-2"><?= $t['feedback_title'] ?></h6>
+                                                <form method="post">
+                                                    <input type="hidden" name="fb_visit_id" value="<?= htmlspecialchars($v['visit_id']) ?>">
+                                                    <input type="hidden" name="original_nic" value="<?= htmlspecialchars($search_nic) ?>">
+                                                    <input type="hidden" name="original_visit_id" value="<?= htmlspecialchars($search_visit_id) ?>">
+                                                    
+                                                    <p class="mb-1 text-muted small"><?= $t['feedback_desc'] ?></p>
+                                                    
+                                                    <div class="rating-stars mb-3">
+                                                        <input type="radio" id="star5_<?= $v['visit_id'] ?>" name="rating" value="5" required/><label for="star5_<?= $v['visit_id'] ?>" title="5 stars"><i class="fas fa-star"></i></label>
+                                                        <input type="radio" id="star4_<?= $v['visit_id'] ?>" name="rating" value="4"/><label for="star4_<?= $v['visit_id'] ?>" title="4 stars"><i class="fas fa-star"></i></label>
+                                                        <input type="radio" id="star3_<?= $v['visit_id'] ?>" name="rating" value="3"/><label for="star3_<?= $v['visit_id'] ?>" title="3 stars"><i class="fas fa-star"></i></label>
+                                                        <input type="radio" id="star2_<?= $v['visit_id'] ?>" name="rating" value="2"/><label for="star2_<?= $v['visit_id'] ?>" title="2 stars"><i class="fas fa-star"></i></label>
+                                                        <input type="radio" id="star1_<?= $v['visit_id'] ?>" name="rating" value="1"/><label for="star1_<?= $v['visit_id'] ?>" title="1 star"><i class="fas fa-star"></i></label>
+                                                    </div>
+
+                                                    <textarea name="comment" class="form-control mb-2" rows="2" placeholder="<?= $t['feedback_comment'] ?>" style="background: white; border: 1px solid #ced4da; color: #495057;"></textarea>
+                                                    
+                                                    <button type="submit" name="submit_feedback" class="btn btn-sm btn-primary px-3 rounded-pill"><?= $t['submit_feedback'] ?></button>
+                                                </form>
                                             </div>
                                         <?php endif; ?>
                                     </div>
