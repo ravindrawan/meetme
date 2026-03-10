@@ -60,6 +60,16 @@ $t = $translations[$lang] ?? $translations['en'];
 
 $user_error = '';
 
+
+function checkRateLimit($pdo, $ip, $action, $limit, $minutes) {
+    $stmt = $pdo->prepare("SELECT COUNT(*) FROM audit_logs WHERE ip_address = ? AND action = ? AND created_at > NOW() - INTERVAL ? MINUTE");
+    $stmt->execute([$ip, $action, $minutes]);
+    $count = $stmt->fetchColumn();
+    return $count < $limit;
+}
+
+
+
 if($_POST){
     $ip = $_SERVER['REMOTE_ADDR'];
     if (!checkRateLimit($pdo, $ip, 'login_attempt', 5, 15)) {
