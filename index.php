@@ -68,7 +68,10 @@ function checkRateLimit($pdo, $ip, $action, $limit, $minutes) {
     return $count < $limit;
 }
 
-
+function clearRateLimit($pdo, $ip, $action) {
+    $stmt = $pdo->prepare("DELETE FROM audit_logs WHERE ip_address = ? AND action = ?");
+    $stmt->execute([$ip, $action]);
+}
 
 if($_POST){
     $ip = $_SERVER['REMOTE_ADDR'];
