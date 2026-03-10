@@ -21,6 +21,7 @@ $translations = [
         'password' => 'Password',
         'login' => 'Login',
         'error_login' => 'Wrong username or password',
+        'error_rate_limit' => 'Too many login attempts. Please try again in 15 minutes.',
         'btn_en' => 'English',
         'btn_si' => 'Sinhala',
         'btn_ta' => 'Tamil'
@@ -34,6 +35,7 @@ $translations = [
         'password' => 'මුරපදය',
         'login' => 'ඇතුල් වන්න',
         'error_login' => 'පරිශීලක නාමය හෝ මුරපදය වැරදිය',
+        'error_rate_limit' => 'ප්‍රවේශ වීම් උත්සාහයන් වැඩියි. කරුණාකර විනාඩි 15කින් නැවත උත්සාහ කරන්න.',
         'btn_en' => 'ඉංග්‍රීසි',
         'btn_si' => 'සිංහල',
         'btn_ta' => 'දෙමළ'
@@ -47,6 +49,7 @@ $translations = [
         'password' => 'கடவுச்சொல்',
         'login' => 'உள்நுழைய',
         'error_login' => 'தவறான பயனர் பெயர் அல்லது கடவுச்சொல்',
+        'error_rate_limit' => 'உள்நுழைவு முயற்சிகள் அதிகமாக உள்ளன. 15 நிமிடங்களுக்குப் பிறகு மீண்டும் முயற்சிக்கவும்.',
         'btn_en' => 'ஆங்கிலம்',
         'btn_si' => 'சிங்களம்',
         'btn_ta' => 'தமிழ்'
@@ -58,23 +61,29 @@ $t = $translations[$lang] ?? $translations['en'];
 $user_error = '';
 
 if($_POST){
-    $username = trim($_POST['username']);
-    $password = $_POST['password'];
-    $stmt = $pdo->prepare("SELECT * FROM users WHERE username = ?");
-    $stmt->execute([$username]);
-    $user = $stmt->fetch();
-    if($user && password_verify($password, $user['password'])){
-        $_SESSION['user'] = $user;
-        
-        // Load Privileges
-        $stmtPriv = $pdo->prepare("SELECT privilege_key FROM role_privileges WHERE role_key = ?");
-        $stmtPriv->execute([$user['role']]);
-        $_SESSION['user_privileges'] = $stmtPriv->fetchAll(PDO::FETCH_COLUMN);
-        
-        header('Location: modules/dashboard/index.php');
-        exit;
+    $ip = $_SERVER['REMOTE_ADDR'];
+    if (!checkRateLimit($pdo, $ip, 'login_attempt', 5, 15)) {
+        $user_error = $t['error_rate_limit'];
     } else {
-        $user_error = $t['error_login'];
+        $username = trim($_POST['username']);
+        $password = $_POST['password'];
+        $stmt = $pdo->prepare("SELECT * FROM users WHERE username = ?");
+        $stmt->execute([$username]);
+        $user = $stmt->fetch();
+        if($user && password_verify($password, $user['password'])){
+            clearRateLimit($pdo, $ip, 'login_attempt');
+            $_SESSION['user'] = $user;
+            
+            // Load Privileges
+            $stmtPriv = $pdo->prepare("SELECT privilege_key FROM role_privileges WHERE role_key = ?");
+            $stmtPriv->execute([$user['role']]);
+            $_SESSION['user_privileges'] = $stmtPriv->fetchAll(PDO::FETCH_COLUMN);
+            
+            header('Location: modules/dashboard/index.php');
+            exit;
+        } else {
+            $user_error = $t['error_login'];
+        }
     }
 }
 // Auto create admin
@@ -96,21 +105,16 @@ $pdo->prepare("INSERT INTO users (username, password, role) VALUES ('admin', ?, 
         body {
             margin: 0;
             padding: 0;
-            height: 100vh;
+            min-height: 100vh;
             background: linear-gradient(rgba(45, 0, 85, 0.9), rgba(120, 20, 180, 0.85)),
                         url('assets/img/bgimg.jpg') center/cover no-repeat fixed;
             display: flex;
-            align-items: center;
-            justify-content: center;
+            flex-direction: column;
             animation: fadeIn 1.5s ease-in-out;
-            position: relative;
         }
         @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
 
         .top-bar {
-            position: absolute;
-            top: 0;
-            left: 0;
             width: 100%;
             height: 80px;
             background: rgba(255, 255, 255, 0.1);
@@ -121,6 +125,7 @@ $pdo->prepare("INSERT INTO users (username, password, role) VALUES ('admin', ?, 
             padding: 0 40px;
             z-index: 1000;
             border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            flex-shrink: 0;
         }
 
         .top-bar-left {
@@ -162,6 +167,7 @@ $pdo->prepare("INSERT INTO users (username, password, role) VALUES ('admin', ?, 
             box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
             overflow: hidden;
             animation: float 6s ease-in-out infinite;
+            margin: auto;
         }
         @keyframes float {
             0%, 100% { transform: translateY(0px); }
@@ -326,9 +332,6 @@ $pdo->prepare("INSERT INTO users (username, password, role) VALUES ('admin', ?, 
 
     <style>
         .footer-bar {
-            position: absolute;
-            bottom: 0;
-            left: 0;
             width: 100%;
             text-align: center;
             padding: 15px;
@@ -337,10 +340,12 @@ $pdo->prepare("INSERT INTO users (username, password, role) VALUES ('admin', ?, 
             color: white;
             font-size: 0.9rem;
             border-top: 1px solid rgba(255, 255, 255, 0.1);
+            flex-shrink: 0;
+            margin-top: 20px;
         }
     </style>
     <div class="footer-bar">
-        Powered by Digital Division | Chief Secretariat - North Western Province
+        System Developed by Digital Division of Chief Secretary Office (NWP)
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
