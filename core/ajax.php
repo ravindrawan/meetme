@@ -19,8 +19,17 @@ if(isset($_POST['section_officers'])){
     echo $html;
     exit;
 }
-
-
+if(isset($_POST['office_sections'])){
+    $office_id = $_POST['office_sections'];
+    $stmt = $pdo->prepare("SELECT * FROM sections WHERE office_id = ? ORDER BY section_name");
+    $stmt->execute([$office_id]);
+    $html = '<option value="">Select Section</option>';
+    while($s = $stmt->fetch()){
+        $html .= "<option value='{$s['id']}'>{$s['section_name']}</option>";
+    }
+    echo $html;
+    exit;
+}
 
 
 if(isset($_POST['previous_nic'])){
