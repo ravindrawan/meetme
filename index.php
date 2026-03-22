@@ -60,19 +60,6 @@ $t = $translations[$lang] ?? $translations['en'];
 
 $user_error = '';
 
-
-function checkRateLimit($pdo, $ip, $action, $limit, $minutes) {
-    $stmt = $pdo->prepare("SELECT COUNT(*) FROM audit_logs WHERE ip_address = ? AND action = ? AND created_at > NOW() - INTERVAL ? MINUTE");
-    $stmt->execute([$ip, $action, $minutes]);
-    $count = $stmt->fetchColumn();
-    return $count < $limit;
-}
-
-function clearRateLimit($pdo, $ip, $action) {
-    $stmt = $pdo->prepare("DELETE FROM audit_logs WHERE ip_address = ? AND action = ?");
-    $stmt->execute([$ip, $action]);
-}
-
 if($_POST){
     $ip = $_SERVER['REMOTE_ADDR'];
     if (!checkRateLimit($pdo, $ip, 'login_attempt', 5, 15)) {
@@ -358,7 +345,7 @@ $pdo->prepare("INSERT INTO users (username, password, role) VALUES ('admin', ?, 
         }
     </style>
     <div class="footer-bar">
-        System Developed by Digital Division of Chief Secretary Office (NWP)
+      [MeetMe V 3.1 @ 2026/03/23] - Powered by Digital Division - North Western Province
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
