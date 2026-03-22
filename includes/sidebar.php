@@ -38,6 +38,14 @@
         </li>
         <?php endif; ?>
         
+        <?php if(hasPrivilege('tile_office_performance')): ?>
+        <li>
+            <a href="<?= BASE_URL ?>modules/performance/index.php" class="nav-link link-dark <?= (strpos($_SERVER['PHP_SELF'], 'performance/index.php') !== false) ? 'active text-white' : '' ?>">
+                <i class="fas fa-chart-line me-2"></i> Office Performance
+            </a>
+        </li>
+        <?php endif; ?>
+        
         <li class="nav-item mt-3 text-uppercase small text-muted fw-bold ps-3">Feedback</li>
 
         <?php if(hasPrivilege('tile_add_feedback')): ?>
@@ -123,6 +131,13 @@
         </li>
         <?php endif; ?>
         <?php endif; ?>
+        
+        <li class="nav-item mt-3 text-uppercase small text-muted fw-bold ps-3">My Account</li>
+        <li>
+            <a href="<?= BASE_URL ?>modules/auth/change_password.php" class="nav-link link-dark <?= (strpos($_SERVER['PHP_SELF'], 'auth/change_password.php') !== false) ? 'active text-white' : '' ?>">
+                <i class="fas fa-key me-2"></i> Change My PW
+            </a>
+        </li>
     </ul>
     <hr>
     <?php

@@ -5,53 +5,11 @@ require '../../core/config.php';
 $stmt = $pdo->query("SELECT * FROM system_settings WHERE id = 1");
 $settings = $stmt->fetch() ?: ['organization_name' => 'VMS', 'organization_logo' => null];
 
-
-
-
-function checkRateLimit($pdo, $ip, $action, $limit, $minutes) {
-    $stmt = $pdo->prepare("SELECT COUNT(*) FROM audit_logs WHERE ip_address = ? AND action = ? AND created_at > NOW() - INTERVAL ? MINUTE");
-    $stmt->execute([$ip, $action, $minutes]);
-    return $stmt->fetchColumn() < $limit;
-}
-
-function clearRateLimit($pdo, $ip, $action) {
-    $stmt = $pdo->prepare("DELETE FROM audit_logs WHERE ip_address = ? AND action = ?");
-    $stmt->execute([$ip, $action]);
-}
-
-
-
-
-
-
-
-
-
-
-
 // Language Logic
 if (isset($_GET['lang'])) {
     $_SESSION['lang'] = $_GET['lang'];
 }
 $lang = $_SESSION['lang'] ?? 'en';
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 $translations = [
     'en' => [

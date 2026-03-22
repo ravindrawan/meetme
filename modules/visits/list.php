@@ -13,10 +13,10 @@ if ($user['role'] !== 'admin' && !empty($user['office_id'])) {
     $params[] = $user['office_id'];
 }
 
-if ($user['role'] === 'officer' && !empty($user['officer_id'])) {
+if (!empty($user['officer_id'])) {
     $where .= " AND visits.officer_id = ?";
     $params[] = $user['officer_id'];
-} elseif ($user['role'] === 'section_head' && !empty($user['section_id'])) {
+} elseif (!empty($user['section_id'])) {
     $where .= " AND visits.section_id = ?";
     $params[] = $user['section_id'];
 }

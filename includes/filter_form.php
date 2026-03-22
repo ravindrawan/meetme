@@ -26,7 +26,18 @@
             <div class="col-md-3">
                 <select name="section" class="form-select">
                     <option value="">All Sections</option>
-                    <?php foreach($pdo->query("SELECT * FROM sections ORDER BY section_name") as $s): ?>
+                    <?php 
+                    $office_id = $_SESSION['user']['office_id'] ?? null;
+                    $role = $_SESSION['user']['role'];
+                    $sql_sections = "SELECT * FROM sections WHERE 1=1";
+                    $params_sections = [];
+                    if ($role !== 'admin' && $office_id) {
+                        $sql_sections .= " AND office_id = ?";
+                        $params_sections[] = $office_id;
+                    }
+                    $stmt = $pdo->prepare($sql_sections . " ORDER BY section_name");
+                    $stmt->execute($params_sections);
+                    foreach($stmt as $s): ?>
                         <option value="<?= $s['id'] ?>" <?= ($_GET['section'] ?? '') == $s['id'] ? 'selected' : '' ?>>
                             <?= htmlspecialchars($s['section_name']) ?>
                         </option>
@@ -36,7 +47,19 @@
             <div class="col-md-3">
                 <select name="officer" class="form-select">
                     <option value="">All Officers</option>
-                    <?php foreach($pdo->query("SELECT * FROM officers ORDER BY name") as $o): ?>
+                    <?php 
+                    $office_id = $_SESSION['user']['office_id'] ?? null;
+                    $role = $_SESSION['user']['role'];
+                    $sql_officers = "SELECT o.id, o.name FROM officers o LEFT JOIN sections s ON o.section_id=s.id WHERE 1=1";
+                    $params_officers = [];
+                    if ($role !== 'admin' && $office_id) {
+                        $sql_officers .= " AND (o.office_id = ? OR s.office_id = ?)";
+                        $params_officers[] = $office_id;
+                        $params_officers[] = $office_id;
+                    }
+                    $stmt = $pdo->prepare($sql_officers . " ORDER BY o.name");
+                    $stmt->execute($params_officers);
+                    foreach($stmt as $o): ?>
                         <option value="<?= $o['id'] ?>" <?= ($_GET['officer'] ?? '') == $o['id'] ? 'selected' : '' ?>>
                             <?= htmlspecialchars($o['name']) ?>
                         </option>

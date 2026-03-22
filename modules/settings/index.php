@@ -172,6 +172,9 @@ $settings = $stmt->fetch() ?: ['organization_name' => 'VMS', 'organization_logo'
                                 <select name="section" class="form-select mb-2" required>
                                     <option value="">Select Section</option>
                                     <?php 
+                                    $office_id = $_SESSION['user']['office_id'] ?? null;
+                                    $role = $_SESSION['user']['role'];
+
                                     $sql = "SELECT * FROM sections WHERE 1=1";
                                     $params = [];
                                     if ($role !== 'admin' && $office_id) {

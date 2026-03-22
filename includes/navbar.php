@@ -48,24 +48,25 @@ if (isset($_SESSION['user']['office_id'])) {
             </div>
         </a>
         
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <!-- Mobile Sidebar Toggle -->
+        <?php if(isset($_SESSION['user'])): ?>
+        <button class="navbar-toggler border-0 shadow-none px-2 me-2 d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileSidebar" aria-controls="mobileSidebar" style="order: -1;">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav me-auto">
-                <!-- Links moved to Sidebar -->
-            </ul>
-             <ul class="navbar-nav ms-auto">
+        <?php endif; ?>
+        
+        <div class="d-flex align-items-center ms-auto">
+             <ul class="navbar-nav flex-row">
                 <?php if(isset($_SESSION['user'])): ?>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle d-flex align-items-center" href="javascript:void(0)" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-display="static">
-                            <span class="me-2 text-end d-lg-block" style="line-height:1.2;">
+                        <a class="nav-link dropdown-toggle d-flex align-items-center" href="javascript:void(0)" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-display="static" style="color: inherit;">
+                            <span class="me-2 text-end d-none d-md-block" style="line-height:1.2;">
                                 <small class="d-block fw-bold"><?= htmlspecialchars($_SESSION['user']['username']) ?></small>
                                 <small class="d-block" style="font-size:0.75rem; opacity:0.8;"><?= ucfirst($_SESSION['user']['role']) ?></small>
                             </span>
                             <i class="fas fa-user-circle fa-2x"></i>
                         </a>
-                        <ul class="dropdown-menu dropdown-menu-end">
+                        <ul class="dropdown-menu dropdown-menu-end position-absolute">
                             <li><a class="dropdown-item" href="<?= BASE_URL ?>modules/auth/logout.php"><i class="fas fa-sign-out-alt me-2"></i> Logout</a></li>
                         </ul>
                     </li>
@@ -74,3 +75,16 @@ if (isset($_SESSION['user']['office_id'])) {
         </div>
     </div>
 </nav>
+
+<?php if(isset($_SESSION['user'])): ?>
+<!-- Offcanvas Sidebar for Mobile -->
+<div class="offcanvas offcanvas-start" tabindex="-1" id="mobileSidebar" aria-labelledby="mobileSidebarLabel" style="width: 250px;">
+  <div class="offcanvas-header bg-light border-bottom">
+    <h5 class="offcanvas-title fw-bold" id="mobileSidebarLabel">Menu</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body p-0" style="overflow-x: hidden;">
+    <?php include __DIR__ . '/sidebar.php'; ?>
+  </div>
+</div>
+<?php endif; ?>

@@ -47,7 +47,7 @@ $visit = $stmt->fetch();
 <script>
 $('#editForm').on('submit', function(e) {
     e.preventDefault();
-    $.post('edit_visit.php?id=<?= $id ?>', $(this).serialize(), function(data) {
+    $.post('edit.php?id=<?= $id ?>', $(this).serialize(), function(data) {
         $('#modalBody').html(data);
     });
 });

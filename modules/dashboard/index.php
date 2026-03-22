@@ -13,20 +13,16 @@ $whereVal = "WHERE DATE(v.visit_datetime) = ?";
 $paramsVal = [$today];
 
 // Filter by Office/Role (Similar logic to reports)
-if (isset($_SESSION['user']['office_id'])) {
-    if ($user['role'] !== 'admin') {
-         if (in_array($user['role'], ['office_admin', 'office_user'])) {
-            $whereVal .= " AND s.office_id = ?";
-            $paramsVal[] = $_SESSION['user']['office_id'];
-         }
-    }
+if (isset($_SESSION['user']['office_id']) && $user['role'] !== 'admin') {
+    $whereVal .= " AND s.office_id = ?";
+    $paramsVal[] = $_SESSION['user']['office_id'];
 }
 
-// Filter by Officer/Section Head
-if ($user['role'] === 'officer' && !empty($user['officer_id'])) {
+// Filter by Officer/Section
+if (!empty($user['officer_id'])) {
     $whereVal .= " AND v.officer_id = ?";
     $paramsVal[] = $user['officer_id'];
-} elseif ($user['role'] === 'section_head' && !empty($user['section_id'])) {
+} elseif (!empty($user['section_id'])) {
     $whereVal .= " AND v.section_id = ?";
     $paramsVal[] = $user['section_id'];
 }

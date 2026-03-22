@@ -37,11 +37,12 @@ if(isset($_POST['nic'])) {
     // Create visit - Officer optional
     $visit_id = generate_visit_id($pdo);
     $officer_id = !empty($_POST['officer']) ? $_POST['officer'] : NULL;
+    $client_time = !empty($_POST['client_time']) ? $_POST['client_time'] : date('Y-m-d H:i:s');
     
-    $stmt = $pdo->prepare("INSERT INTO visits (visit_id, nic, reason, section_id, officer_id) VALUES (?, ?, ?, ?, ?)");
+    $stmt = $pdo->prepare("INSERT INTO visits (visit_id, nic, reason, section_id, officer_id, visit_datetime) VALUES (?, ?, ?, ?, ?, ?)");
 	
 	$reason = $_POST['reason'] === 'Other' ? $_POST['other_reason'] : $_POST['reason'];
-	$stmt->execute([$visit_id, $nic, $reason, $_POST['section'], $officer_id]);
+	$stmt->execute([$visit_id, $nic, $reason, $_POST['section'], $officer_id, $client_time]);
    
     echo "<script>window.open('../visits/receipt.php?id=$visit_id','_blank');</script>";
     echo "<script>alert('Visitor registered: $visit_id');</script>";
@@ -76,6 +77,7 @@ if(isset($_POST['nic'])) {
             <div class="card shadow-sm">
                 <div class="card-body">
                     <form method="post" id="visitForm">
+                        <input type="hidden" name="client_time" id="client_time">
                         <div class="row">
                             <div class="col-md-6">
                                 <label class="form-label">NIC Number *</label>
@@ -120,7 +122,7 @@ if(isset($_POST['nic'])) {
                                         if(isset($_SESSION['user']['office_id'])) $_SESSION['user']['office_id'] = (int)$_SESSION['user']['office_id'];
                                     }
                                     
-                                    $office_id = (isset($_SESSION['user']['office_id']) && $_SESSION['user']['role'] !== 'admin') ? $_SESSION['user']['office_id'] : null;
+                                    $office_id = (isset($_SESSION['user']['office_id']) && in_array($_SESSION['user']['role'], ['office_admin', 'office_user'])) ? $_SESSION['user']['office_id'] : null;
                                     
                                     $sql = "SELECT * FROM sections WHERE 1=1"; 
                                     $params = [];
@@ -201,6 +203,17 @@ function toggleOther() {
     let sel = $('#reason').val();
     $('#otherReason').toggle(sel === 'Other');
 }
+
+$('#visitForm').on('submit', function() {
+    let dt = new Date();
+    let Y = dt.getFullYear();
+    let m = String(dt.getMonth() + 1).padStart(2, '0');
+    let d = String(dt.getDate()).padStart(2, '0');
+    let H = String(dt.getHours()).padStart(2, '0');
+    let i = String(dt.getMinutes()).padStart(2, '0');
+    let s = String(dt.getSeconds()).padStart(2, '0');
+    $('#client_time').val(`${Y}-${m}-${d} ${H}:${i}:${s}`);
+});
 </script>
 
 </script>

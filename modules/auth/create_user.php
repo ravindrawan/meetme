@@ -55,11 +55,17 @@ if(isset($_POST['create'])){
     $username = trim($_POST['username']);
     $password = $_POST['password'];
     $role = $_POST['role'];
-    $office_id = $_POST['office'] ?: null; // For office users
+    $office_id = $_POST['office'] ?: $user_office_id; // Set explicitly or fallback to creator's office_id
+    // For office admin, make sure the assigned role isn't 'admin'
+    // To accommodate dynamic roles, check if the role exists in the db first
+    $roleCheck = $pdo->prepare("SELECT role_key FROM user_roles WHERE role_key = ?");
+    $roleCheck->execute([$role]);
+    if(!$roleCheck->fetch() && $role !== 'office_admin' && $role !== 'office_user' && $role !== 'front_office_user') {
+        die("Invalid role selected.");
+    }
     
-    // Check constraints
-    if ($currentRole !== 'admin' && !in_array($role, ['office_admin', 'office_user'])) {
-        die("You can only create Office users.");
+    if ($currentRole !== 'admin' && in_array($role, ['admin'])) {
+        die("You cannot create admin users.");
     }
     
     $check = $pdo->prepare("SELECT id FROM users WHERE username=?");
@@ -68,8 +74,8 @@ if(isset($_POST['create'])){
         $message = '<div class="alert alert-danger">Username already taken</div>';
     } else {
         $hash = password_hash($password, PASSWORD_DEFAULT);
-        $officer_id = ($role=='officer') ? $_POST['officer'] : null;
-        $section_id = ($role=='section_head' || $role=='officer') ? $_POST['section'] : null;
+        $officer_id = !empty($_POST['officer']) ? $_POST['officer'] : null;
+        $section_id = !empty($_POST['section']) ? $_POST['section'] : null;
         
         $stmt = $pdo->prepare("INSERT INTO users (username, password, role, officer_id, section_id, office_id, created_by) VALUES(?,?,?,?,?,?,?)");
         $stmt->execute([$username, $hash, $role, $officer_id, $section_id, $office_id, $currentUser['id']]);
@@ -164,7 +170,13 @@ $users = $stmt->fetchAll();
                                 
                                 <?php if($currentRole === 'admin'): ?>
                                      <?php foreach($allRoles as $r): ?>
-                                        <?php if(!in_array($r['role_key'], ['office_admin', 'office_user'])): ?>
+                                        <?php if(!in_array($r['role_key'], ['office_admin', 'office_user', 'front_office_user'])): ?>
+                                             <option value="<?= $r['role_key'] ?>"><?= $r['role_name'] ?></option>
+                                        <?php endif; ?>
+                                     <?php endforeach; ?>
+                                <?php elseif ($allowedLevel): ?>
+                                     <?php foreach($allRoles as $r): ?>
+                                        <?php if(!in_array($r['role_key'], ['admin'])): ?>
                                              <option value="<?= $r['role_key'] ?>"><?= $r['role_name'] ?></option>
                                         <?php endif; ?>
                                      <?php endforeach; ?>
@@ -172,7 +184,6 @@ $users = $stmt->fetchAll();
                                 
                                 <?php if($allowedLevel): ?>
                                     <option value="office_admin">Office Admin (<?= $allowedLevel ?>)</option>
-                                    <option value="office_user">Office User (<?= $allowedLevel ?>)</option>
                                 <?php endif; ?>
                             </select>
                             <?php if($currentRole === 'admin'): ?>
@@ -186,10 +197,10 @@ $users = $stmt->fetchAll();
                         <?php if ($allowedLevel): ?>
                         <div class="col-md-3" id="officeDiv">
                             <label class="form-label">Office (<?= $allowedLevel ?>)</label>
-                            <select name="office" class="form-select" required>
+                            <select name="office" class="form-select" required onchange="loadSections(this.value)">
                                 <option value="">Select Office</option>
                                 <?php foreach($offices as $o): ?>
-                                    <option value="<?= $o['id'] ?>"><?= htmlspecialchars($o['office_name']) ?> (<?= $o['office_level'] ?>)</option>
+                                    <option value="<?= $o['id'] ?>" <?= ($o['id'] == $user_office_id) ? 'selected' : '' ?>><?= htmlspecialchars($o['office_name']) ?> (<?= $o['office_level'] ?>)</option>
                                 <?php endforeach; ?>
                             </select>
                         </div>
@@ -200,9 +211,6 @@ $users = $stmt->fetchAll();
                             <label class="form-label">Section</label>
                             <select name="section" id="section" class="form-select" onchange="loadOfficers()">
                                 <option value="">Select Section</option>
-                                <?php foreach($pdo->query("SELECT * FROM sections ORDER BY section_name") as $s): ?>
-                                    <option value="<?= $s['id'] ?>"><?= $s['section_name'] ?></option>
-                                <?php endforeach; ?>
                             </select>
                         </div>
                         <div class="col-md-3" id="officerDiv" style="display:none">
@@ -285,20 +293,46 @@ $users = $stmt->fetchAll();
 <script>
 function toggleFields(){
     let role = $('#role').val();
-    let showSection = (role=='officer' || role=='section_head');
-    let showOfficer = (role=='officer');
+    
+    let isOfficeContext = <?= (in_array($currentRole, ['office_admin', 'office_user']) ? 'true' : 'false') ?>;
+    let showSection = isOfficeContext;
+    let showOfficer = isOfficeContext;
     
     // Hide office div if looking at standard roles, show if office_user (though PHP handles rendering primarily)
-    // Actually PHP handles the 'Office' dropdown rendering based on Level. 
-    // But if Admin switches between 'Front Officer' and 'Office User' (if I allow switching), we might need JS.
-    // In my logic, Admin sees generic roles + 'Level 1 Office User'.
-    
     $('#sectionDiv').toggle(showSection);
     $('#officerDiv').toggle(showOfficer);
     
-    // Auto clear
-    if(!showSection) $('#section').val('');
-    if(!showOfficer) $('#officer').val('');
+    // Auto load sections if office is already selected (e.g. for Level options)
+    if (showSection) {
+        let officeElem = $('select[name="office"]');
+        let selectedOfficeId = null;
+        
+        if (officeElem.length > 0 && officeElem.val() !== "") {
+            selectedOfficeId = officeElem.val();
+        } else {
+            selectedOfficeId = '<?= $user_office_id ?>';
+        }
+        
+        if (selectedOfficeId) {
+            loadSections(selectedOfficeId);
+        }
+    } else {
+        // Only clear if we are hiding the sections/officers
+        $('#section').html('<option value="">Select Section</option>');
+        $('#officer').html('<option value="">Select Officer</option>');
+    }
+}
+
+function loadSections(officeId) {
+    if(officeId){
+        $.post('../../core/ajax.php', {office_sections: officeId}, function(data){
+            $('#section').html(data);
+            $('#officer').html('<option value="">Select Officer</option>'); // reset officers
+        });
+    } else {
+        $('#section').html('<option value="">Select Section</option>');
+        $('#officer').html('<option value="">Select Officer</option>');
+    }
 }
 
 function loadOfficers(){
