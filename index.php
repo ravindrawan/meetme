@@ -1,5 +1,20 @@
 <?php
 require 'core/config.php';
+
+
+// --- Rate Limiting Functions ---
+function checkRateLimit($pdo, $ip, $action, $limit, $minutes) {
+    // දැනට ලොගින් වෙන්න ඉඩ දෙන්න මෙහෙම දාමු. 
+    // පසුව අවශ්‍ය නම් database එකේ table එකක් හදාගෙන මේක develop කරන්න පුළුවන්.
+    return true; 
+}
+
+function clearRateLimit($pdo, $ip, $action) {
+    return true;
+}
+// -------------------------------
+
+
 // Get settings
 $stmt = $pdo->query("SELECT * FROM system_settings WHERE id = 1");
 $settings = $stmt->fetch() ?: ['organization_name' => 'VMS', 'organization_logo' => null];
@@ -96,7 +111,7 @@ $pdo->prepare("INSERT INTO users (username, password, role) VALUES ('admin', ?, 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VMS | Login</title>
+    <title>MeetMe | Login</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Noto+Sans+Sinhala:wght@400;700&family=Noto+Sans+Tamil:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
