@@ -1,5 +1,6 @@
 <?php
 require '../../core/config.php';
+require '../../core/functions.php';
 
 // Get settings for logo/name
 $stmt = $pdo->query("SELECT * FROM system_settings WHERE id = 1");
