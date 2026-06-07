@@ -1,0 +1,1817 @@
+id,office_name,office_level
+0,North Western Provincial Council,Level 1
+10000000000,Governors Office - North Western Provincial Council,Level 1
+20000000000,Council Secretariat - North Western Provincial Council,Level 1
+30000000000,Provincial Public Service Commission - North Western Provincial Council,Level 1
+40000000000,Chief Secretary Office - North Western Provincial Council,Level 1
+40100000000,Deputy Chief Secretary office (Personnel & Training) - North Western Provincial Council,Level 2
+40200000000,Deputy Chief Secretary office (Finance) - North Western Provincial Council,Level 2
+40300000000,Deputy Chief Secretary office (Planning) - North Western Provincial Council,Level 2
+40400000000,Deputy Chief Secretary office (Engineering) - North Western Provincial Council,Level 2
+40500000000,Department of Internal Audit - North Western Provincial Council,Level 2
+40600000000,Department of Provincial Revenue - North Western Provincial Council,Level 2
+50000000000,Provincial Chief Ministry /Rural Water Supply & Environmental Sanitation Unit - North Western Provincial Council,Level 1
+50700000000,Department of Local Government - North Western Provincial Council,Level 2
+50700100000,Municipal Council - Kurunegala,Level 3
+50700200000,Urban Council - Kuliyapitiya,Level 3
+50700300000,Urban Council - Puttalam,Level 3
+50700400000,Urban Council - Chilaw,Level 3
+50700500000,Pradeshiya Sabha - Alawwa,Level 3
+50700600000,Pradeshiya Sabha - Narammala,Level 3
+50700700000,Pradeshiya Sabha - Bingiriya,Level 3
+50700800000,Pradeshiya Sabha - Galgamuwa,Level 3
+50700900000,Pradeshiya Sabha - Giribawa,Level 3
+50701000000,Pradeshiya Sabha - Ibbagamuwa,Level 3
+50701100000,Pradeshiya Sabha - Kobeigane,Level 3
+50701200000,Pradeshiya Sabha - Kuliyapitiya,Level 3
+50701300000,Pradeshiya Sabha - Kurunegala,Level 3
+50701400000,Pradeshiya Sabha - Maho,Level 3
+50701500000,Pradeshiya Sabha - Mawathagama,Level 3
+50701600000,Pradeshiya Sabha - Nikaweratiya,Level 3
+50701700000,Pradeshiya Sabha - Paduwasnuwara,Level 3
+50701800000,Pradeshiya Sabha - Pannala,Level 3
+50701900000,Pradeshiya Sabha - Polgahawela,Level 3
+50702000000,Pradeshiya Sabha - Polpithigama,Level 3
+50702100000,Pradeshiya Sabha - Rideegama,Level 3
+50702200000,Pradeshiya Sabha - Udubaddawa,Level 3
+50702300000,Pradeshiya Sabha - Wariyapola,Level 3
+50702400000,Pradeshiya Sabha - Anamaduwa,Level 3
+50702500000,Pradeshiya Sabha - Arachchikattuwa,Level 3
+50702600000,Pradeshiya Sabha - Chilaw,Level 3
+50702700000,Pradeshiya Sabha - Kalpitiya,Level 3
+50702800000,Pradeshiya Sabha - Karuwalagaswewa,Level 3
+50702900000,Pradeshiya Sabha - Nattandiya,Level 3
+50703000000,Pradeshiya Sabha - Nawagaththegama,Level 3
+50703100000,Pradeshiya Sabha - Puttalam,Level 3
+50703200000,Pradeshiya Sabha - Wanathawilluwa,Level 3
+50703300000,Pradeshiya Sabha - Wennappuwa,Level 3
+50800000000,Department of Provincial Engineering - North Western Provincial Council,Level 2
+50800100000,Regional Engineering Office - Kurunegala,Level 3
+50800200000,Regional Engineering Office - Rideegama,Level 3
+50800300000,Regional Engineering Office - Kuliyapitiya,Level 3
+50800400000,Regional Engineering Office - Wariyapola,Level 3
+50800500000,Regional Engineering Office - Maho,Level 3
+50800600000,Regional Engineering Office - Puttalam,Level 3
+50800700000,Regional Engineering Office - Wennappuwa,Level 3
+50900000000,Department of Provincial Education - North Western Provincial Council,Level 2
+50900100000,Zonal Education Office - Kuliyapitiya,Level 3
+50900100100,Divisional Education Office - Kuliyapitiya West,Level 4
+50900100101,Kirindawa Maha Vidyalaya,Level 5
+50900100102,Anukkane Maha Vidyalaya,Level 5
+50900100103,Annaruwa Kanishta Vidyalaya,Level 5
+50900100104,Kithalawa Poogalla Maha Vidyalay,Level 5
+50900100105,"Sri Saddawimala Kanishta Vidyalaya, Beminiggalla",Level 5
+50900100106,Wahumuwa Kanishta Vidyalaya,Level 5
+50900100107,Kuliyapitiya Central College,Level 5
+50900100108,Kuliyapitiya Saranath Vidyalaya,Level 5
+50900100109,Deegalla Rewatha Madya Maha Vidyalaya,Level 5
+50900100110,Yakarawaththa Maha Vidyalaya,Level 5
+50900100111,"Sri Sarananda Madya Maha Vidyalaya, Wewagama",Level 5
+50900100112,Ilukhena Gunananda Maha Vidyalaya,Level 5
+50900100113,Kanadulla Darmaraja Maha Vidyalaya,Level 5
+50900100114,Mahimpitiya Kanishta Vidyalaya,Level 5
+50900100115,Embawa Sri Saranankara Primary School,Level 5
+50900100116,Sri Dhammarathana Kanishta Vidyalaya,Level 5
+50900100117,"St. Joshep S College, Ihala Diyadora",Level 5
+50900100118,"Holy Anjels Girls College, Kuliyapitiya",Level 5
+50900100119,"Sri Sumangala Vidyalaya, Kumbalwala",Level 5
+50900100120,Galpola Kanishta Vidyalaya,Level 5
+50900100121,Thalahitimulla Kanishta Vidyalaya,Level 5
+50900100122,"Sripathi Royal College, Diyakalamulla",Level 5
+50900100123,Delana Silwathenna Junior School,Level 5
+50900100124,Pahala Elathalawa Kanishta Vidyalaya,Level 5
+50900100125,Pahala Diyadora Kanishta Vidyalaya,Level 5
+50900100126,Madakumburumulla Kanishta Vidyalaya,Level 5
+50900100127,Weerambuwa Primary School,Level 5
+50900100128,Hammalawa Kanishta Vidyalaya,Level 5
+50900100129,Kuliyapitiya Assedduma Subarathi Kanishta Vidyalaya,Level 5
+50900100130,Iguruwaththa Primary School,Level 5
+50900100131,Eluwapola Primary School,Level 5
+50900100132,Katuwaththewela Primary School,Level 5
+50900100133,Thawalandana Primary School,Level 5
+50900100134,"Sambodhi Primary Vidyalaya, Bohandiya",Level 5
+50900100135,Wadugedara Primary School,Level 5
+50900100136,Haggamuwa Sri Rewatha Kanishta Vidyalaya,Level 5
+50900100137,"Al Humaira Muslim Vidyalaya, Edandawela",Level 5
+50900100138,Kuliyapitiya Muslim Kanishta Vidyalaya,Level 5
+50900100139,Yayawaththa Muslim Vidyalaya,Level 5
+50900100140,Kuliyapitiya Vishaka Vidyalaya,Level 5
+50900100141,"Vijaya Vidyalaya, Ihala Gomugomuwa",Level 5
+50900100142,"Sri Seelarathana Prathamika Vidyalaya, Wewegama",Level 5
+50900100143,"Bauddhaloka Vidyalaya, Deegalla",Level 5
+50900100200,Divisional Education Office - Bingiriya,Level 4
+50900100201,Bingiriya Sri Saranankara National School,Level 5
+50900100202,Halmillawewa Siddrartha Maha Vidyalaya,Level 5
+50900100203,Wellarawa Maha Vidyalaya,Level 5
+50900100204,Weerapokuna Vijitha Madya Maha Vidyalaya,Level 5
+50900100205,Udawela Rewatha Central College,Level 5
+50900100206,"L.B. Jayasena Maha Vidyalaya, Horagassagarahiruwalpola",Level 5
+50900100207,Ihala Kadigamuwa Maha Vidyalaya,Level 5
+50900100208,Manalembuwa Sri Sarananda Modal School,Level 5
+50900100209,Thisogama Sripali Maha Vidyalaya,Level 5
+50900100210,Bowaththa Kanishta Vidyalaya,Level 5
+50900100211,"Sri Saddananda Kanishta Vidyalaya, Brahmanayagama",Level 5
+50900100212,Koswaththa Gamini Maha Vidyalaya,Level 5
+50900100213,Pahala Koonkadawala Kanishta Vidyalaya,Level 5
+50900100214,Siri Sumeda Kanishta Widyalaya,Level 5
+50900100215,Urapotta Kanishta Vidyalaya,Level 5
+50900100216,Ihala Molealipitiya Kanista Vidyalaya,Level 5
+50900100217,Kuliyapitiya Nithalawa Saman Baduru Prathamika Vidyalaya,Level 5
+50900100218,Hiripokuna Kanishta Vidyalaya,Level 5
+50900100219,Kuliyapitiya St. Xaviour Primary School,Level 5
+50900100220,Aluth Kaduruwewa Kanishta Vidyalaya,Level 5
+50900100221,Getulawa Kanishta Vidyalaya,Level 5
+50900100222,Kuliyapitiya Ihala Kiniyama Sinhala Primary School,Level 5
+50900100223,Kuliyapitiya Kadigamuwa Primary School,Level 5
+50900100224,Makullapokuna Kanishta Vidyalaya,Level 5
+50900100225,Molaeliya Primary School,Level 5
+50900100226,Wilaththawa Kanishta Vidyalaya,Level 5
+50900100227,Kuliyapitiya Swarnapradeepa Kanishta Vidyalaya,Level 5
+50900100228,Baragedara Anagarika Dharmapala Madya Maha Vidyalaya,Level 5
+50900100229,Kuliyapitiya Diganwela Ananga Vidyalaya,Level 5
+50900100230,Hamannapahuwa Model Primary School,Level 5
+50900100231,Ihala Kiniyama Muslim Maha Vidyalaya,Level 5
+50900100232,Madige Weediyawala Muslim Vidyalaya,Level 5
+50900100233,Poowella Muslim Maha Vidyalaya,Level 5
+50900100300,Divisional Education Office - Paduwasnuwara,Level 4
+50900100301,Hettipola Mahindodaya Maha Vidyalaya,Level 5
+50900100302,Bandarakoswaththa Maha Vidyalaya,Level 5
+50900100303,Rathmalla Sri Ariyawansha Maha Vidyalaya,Level 5
+50900100304,Kadawalagedara Maha Vidyalaya,Level 5
+50900100305,Kolambagama Wimalaseela Maha Vidyalaya,Level 5
+50900100306,Dewamedi Kudawewa Aggawansa Maha Vidyalaya,Level 5
+50900100307,"Madulla Maha Vidyalaya, Sunandapura",Level 5
+50900100308,Katumuluwa Kanishta Vidyalaya,Level 5
+50900100309,"Sirisumana Kanishta Vidyalaya, Kooratihena",Level 5
+50900100310,Kosdeniya Maha Vidyalaya,Level 5
+50900100311,Teckewa Prinary School,Level 5
+50900100312,Panduwasnuwara Sri Medhankara Kanishta Vidyalaya,Level 5
+50900100313,Palugahawela Kanishta Vidyalaya,Level 5
+50900100314,Rambawewa Kanishta Vidyalaya,Level 5
+50900100315,Wadumunna Kanishta Vidyalaya,Level 5
+50900100316,Wilbagedara Kanishta Vidyalaya,Level 5
+50900100317,Hunnelembuwa Maha Vidyalaya,Level 5
+50900100318,Katagamuwa Kanishta Vidyalaya,Level 5
+50900100319,Mandapola Primary School,Level 5
+50900100320,Koonwewa Kanishta Vidyalaya,Level 5
+50900100321,Nallura Ananda Primary School,Level 5
+50900100322,"Sri Sambuddathwa Jayanthi Modern Primary School, Kanaththewewa",Level 5
+50900100323,Madaina Saranankara Kanishta Vidyalaya,Level 5
+50900100324,Medagama Primary School,Level 5
+50900100325,"Wayamba Janadhipathi Vidyalaya, Munihirigama",Level 5
+50900100326,Hindagahawewa Kanishta Vidyalaya,Level 5
+50900100327,Hettipola Model Primery School,Level 5
+50900100328,Panduwasnuwara S.W.R.D. Bandaranayaka National School,Level 5
+50900100329,Dematawa Maha Vidyalaya,Level 5
+50900100330,Kotambapitiya Muslim Central College,Level 5
+50900100331,Bandarakoswaththa Muslim Maha Vidyalaya,Level 5
+50900100332,Kooratihena Muslim Primary School,Level 5
+50900100333,Madige Anukkana Muslim Maha Vidyalaya,Level 5
+50900100334,Madige Midiyala Central College,Level 5
+50900100335,Godekurugama Muslim Primary School,Level 5
+50900100336,"Al-Falah Muslim Primary School, Madige Midiyala",Level 5
+50900100400,Divisional Education Office - Dahanakgedara,Level 4
+50900100401,Nagollagoda Madya Maha Vidyalaya,Level 5
+50900100402,Kirimetiyawa Sri Sumanasara Maha Vidyalaya,Level 5
+50900100403,"Jayasena Rajakaruna Maha Vidyalaya, Dahanakgedeara",Level 5
+50900100404,Magulagama Maha Vidyalaya,Level 5
+50900100405,Moragane Maha Vidyalaya,Level 5
+50900100406,Epaladeniya Kanishta Vidyalaya,Level 5
+50900100407,Kamburapola Muslim Kanishta Vidyalaya,Level 5
+50900100408,Gonnawa Prathamika Vidyalaya,Level 5
+50900100409,Gomugomuwa Kanishta Vidyalaya,Level 5
+50900100410,Pihimbiya Rathmale Kanishta Vidyalaya,Level 5
+50900100411,Porawewa Kanishta Vidyalaya,Level 5
+50900100412,Bandaradampitiya Kanishta Vidyalaya,Level 5
+50900100413,Bodhimulla Kanishta Vidyalaya,Level 5
+50900100414,Mohoththawagoda Kanishta Vidyalaya,Level 5
+50900100415,Hanthihawa Kanishta Vidyalaya,Level 5
+50900100416,Pahala Pihimbiya Prathamika Vidyalaya,Level 5
+50900100417,Udagama Kanishta Vidyalaya,Level 5
+50900100418,Jayasiripura Indrasara Prathamika Vidyalaya,Level 5
+50900100419,"Sri Rahula Prathamika Vidyalaya, Kanathalawa",Level 5
+50900100420,Galahitiyawa Prathamika Vidyalaya,Level 5
+50900100421,Dunakayawaththa Prathamika Vidyalaya,Level 5
+50900100422,Doratiyagedara Prathamika Vidyalaya,Level 5
+50900100423,Rathmulukanda Sri Sunanda Prathamika Vidyalaya,Level 5
+50900100424,Ehattumulla Muslim Maha Vidyalaya,Level 5
+50900100425,Thorakotuwa Muslim Kanishta Vidyalaya,Level 5
+50900100426,Pandupura Subhoothi Prathamika Vidyalaya,Level 5
+50900100500,Divisional Education Office - Udabaddawa,Level 4
+50900100501,Bibiladeniya Sri Gunananda Madya Maha Vidyalaya,Level 5
+50900100502,Gahalagaswala Maha Vidyalaya,Level 5
+50900100503,Horathepola Mahanama Maha Vidyalaya,Level 5
+50900100504,Kattimahana Maha Vidyalaya,Level 5
+50900100505,Kubukgahamulla Sri Bodhi Madya Maha Vidyalaya,Level 5
+50900100506,"Sri Dammananda Maha Vidyalaya, Udubddawa",Level 5
+50900100507,"Sri Saddananda Prathamika Vidyalaya, Bunnahapola",Level 5
+50900100508,Dunakadeniya Roman Catholic Vidyalaya,Level 5
+50900100509,"J.R. Jayawardana Madya Maha Vidyalaya, Dummalasooriya",Level 5
+50900100510,Henegedara Prathamika Vidyalaya,Level 5
+50900100511,"St Anne's College, Kattimahana",Level 5
+50900100512,Kappangamuwa Darmawardana Prathamika Vidyalaya,Level 5
+50900100513,Kahadenigama Prathamika Vidyalaya,Level 5
+50900100514,"Sambuddhaloka Prathamika Vidyalaya, Karaulla",Level 5
+50900100515,Kootharippuwa Prathamika Vidyalaya,Level 5
+50900100516,Mandakondana Roman Catholic Vidyalaya,Level 5
+50900100517,Thawalla Dhammaloka Maha Vidyalaya,Level 5
+50900100518,Thalgahapoththa Prathamika Vidyalaya,Level 5
+50900100519,Wathuwaththa Sri Sobitha Prathamika Vidyalaya,Level 5
+50900100520,Weerakodiyana Maha Vidyalaya,Level 5
+50900100521,Udawela Kumara Kanishta Vidyalaya,Level 5
+50900100522,"St Joan of Arc Vidyalaya, Udubaddawa",Level 5
+50900100523,Walpitagama Gamini Darmaraja Kanishta Vidyalaya,Level 5
+50900100524,Wilapola Prathamika Vidyalaya,Level 5
+50900100525,"Shariputhra Prathamika Vidyalaya, Dummalasooriya",Level 5
+50900100526,Divrumpola Muslim Kanishta Vidyalaya,Level 5
+50900100527,Ethumgahakotuwa Muslim Madya Maha Vidyalaya,Level 5
+50900100528,Yagamwela Muslim Kanishta Vidyalaya,Level 5
+50900100600,Teacher Center - Yakarawatta,Level 4
+50900100700,Teacher Center - Paduwasnuwara,Level 4
+50900200000,Zonal Education Office - Giriulla,Level 3
+50900200100,Divisional Education Office - Alawwa,Level 4
+50900200101,Narammala Mayurapada National School,Level 5
+50900200102,Dambadeniya Madya Maha Vidyalaya,Level 5
+50900200103,Narammala R.G. Senanayake Maha Vidyalaya,Level 5
+50900200104,Paranagama Maha Vidyalaya,Level 5
+50900200105,Metiyagane Maha Vidyalaya,Level 5
+50900200106,Kadahapola Maha Vidyalaya,Level 5
+50900200107,Penthenigoda Maha Vidyalaya,Level 5
+50900200108,Kithaladeniya Kanishta Vidyalaya,Level 5
+50900200109,Kiulgalla Kanishta Vidyalaya,Level 5
+50900200110,Koottapitiya Adarsha Kanishata Vidyalaya,Level 5
+50900200111,Narammala Mayurapada Kanishta Vidyalaya,Level 5
+50900200112,Meewewa Prathamika Vidyalaya,Level 5
+50900200113,Muthugala Kanishta Vidyalaya,Level 5
+50900200114,Yakkavita Prathamika Vidyalaya,Level 5
+50900200115,Rangallepola Prathamika Vidyalaya,Level 5
+50900200116,Kalundawa Saranankara Maha Vidyalaya,Level 5
+50900200117,Ganegoda Prathamika Vidyalaya,Level 5
+50900200118,Paranagama Prathamika Vidyalaya,Level 5
+50900200119,Ranawaththa Prathamika Vidyalaya,Level 5
+50900200120,Riloiuwa Prathamika Vidyalaya,Level 5
+50900200121,Weragala Prathamika Vidyalaya,Level 5
+50900200122,Sirigala Wijayaba Maha Vidyalaya,Level 5
+50900200123,"Sarabhumi Prathamika Vidyalaya, Udawelawaththa",Level 5
+50900200124,Polgahayaya Madya Maha Vidyalaya,Level 5
+50900200125,"Nooraniya Muslim Vidyalaya, Pahamune",Level 5
+50900200126,"Al Hijra Musllm Kanista Vidyalaya, Dambadeniya",Level 5
+50900200127,Alawwa Sri Rahula National School,Level 5
+50900200128,Kandegedara Maha Vidyalaya,Level 5
+50900200129,Galgamuwa Maha Vidyalaya,Level 5
+50900200130,Nungamuwa Damsen Madya Maha Vidyalaya,Level 5
+50900200131,Poramadala Maha Vidyalaya,Level 5
+50900200132,Boyawalana Maha Vidyalaya,Level 5
+50900200133,"Wayamba President's College, Pambadeniya",Level 5
+50900200134,Humbuluwa Madya Maha Vidyalaya,Level 5
+50900200135,Wewala Maha Vidyalaya,Level 5
+50900200136,"Wijayaba Maha Vidyalaya, Wennoruwa",Level 5
+50900200137,Walakumbura Maha Vidyalaya,Level 5
+50900200138,Agbowa Prathamika Vidyalaya,Level 5
+50900200139,Udakekulawala Maha Vidyalaya,Level 5
+50900200140,Othara Kiruwanpola Primary School,Level 5
+50900200141,Galdeniya Kanishta Vidyalaya,Level 5
+50900200142,Burussegoda Kanishta Vidyalaya,Level 5
+50900200143,Madawala Kanishta Vidyalaya,Level 5
+50900200144,Alawwa Rathanalankara Maha Vidyalaya,Level 5
+50900200145,Adiyadeniya Prathamika Vidyalaya,Level 5
+50900200146,Pahalabujjomuwa Prathamika Vidyalaya,Level 5
+50900200147,Poramadala Prathamika Vidyalaya,Level 5
+50900200148,Wewala Prathamika Vidyalaya,Level 5
+50900200149,"Mahindodaya Prathamika Vidyalaya, Dambadeniya",Level 5
+50900200000,Divisional Education Office - Kuliyapitiya East,Level 4
+50900200201,Nakkawattha Madya Maha Vidyalaya,Level 5
+50900200202,Galgammulla Mayurawathi Maha Vidyalaya,Level 5
+50900200203,"Ruwangiri Madya Maha Vidyalaya, Bogamulla",Level 5
+50900200204,Neththipolagedara Maha Vidyalaya,Level 5
+50900200205,Horombawa Maha Vidyalaya,Level 5
+50900200206,Medelpola Maha Vidyalaya,Level 5
+50900200207,Etampola Prathamika Vidyalaya,Level 5
+50900200208,Godagama Janapada Kanishta Vidyalaya,Level 5
+50900200209,Thelahara Ariyawansa Kanishta Vidyalaya,Level 5
+50900200210,Dalupothagama Prathamika Vidyalaya,Level 5
+50900200211,Dethawa Kanishta Vidyalaya,Level 5
+50900200212,Pahala Pothuewwa Primary School,Level 5
+50900200213,Ranasgalla Primary School,Level 5
+50900200214,Ruggassagara Kanishta Vidyalaya,Level 5
+50900200215,Alahitiya Primary School,Level 5
+50900200216,Andigedara Primary School,Level 5
+50900200217,Karagahagedara Primary School,Level 5
+50900200218,Kilimpola Primary School,Level 5
+50900200219,Koduruwapola Primary School,Level 5
+50900200220,Barigoda Mahinda Model Primary School,Level 5
+50900200221,Mahagama Primary School,Level 5
+50900200222,Manawa Kanishta Vidyalaya,Level 5
+50900200223,Muruthenga Jayakodi Primary School,Level 5
+50900200224,Kekunagolla National School,Level 5
+50900200225,Siyambalagaskotuwa Madeena National School,Level 5
+50900200226,Arakyala Madya Maha Vidyalaya,Level 5
+50900200227,"Minhaj Muslim Vidyalaya, Horombawa",Level 5
+50900200228,"Sulaimaniya Madya Maha Vidyalaya, Kureekotuwa",Level 5
+50900200229,Meddeketiya Madya Maha Vidyalaya,Level 5
+50900200230,Panavitiya Muslim Vidyalaya,Level 5
+50900200231,"Al- Irshath Muslim Vidyalaya, Thoranegedara",Level 5
+50900200232,"Al Badur Muslim Vidyalaya, Metiwelagedara",Level 5
+50900200233,Kekunagolla Muslim Primary School,Level 5
+50900200000,Divisional Education Office - Pannala,Level 4
+50900200301,Sandalanka Madya Maha Vidyalaya,Level 5
+50900200302,"IMRA Iriyagolla Maha Vidyalaya, Yakwila",Level 5
+50900200303,Kadanegedara Dharmapala Maha Vidyalaya,Level 5
+50900200304,Daraluwa Maha Vidyalaya,Level 5
+50900200305,Hendiyagala Sri RathanapalaMaha Vidyalaya,Level 5
+50900200306,Welpalla Maha Vidyalaya,Level 5
+50900200307,Nedalagamuwa Rahula Maha Vidyalaya,Level 5
+50900200308,Gallehamulla Maha Vidyalaya,Level 5
+50900200309,Mankadura Vidyananda Vidyalaya,Level 5
+50900200310,Gonulla Vidyadeepthi Kanishta Vidyalaya,Level 5
+50900200311,Hettirippuwa Kanishta Vidyalaya,Level 5
+50900200312,Waguruwela Kanishta Vidyalaya,Level 5
+50900200313,Ihala Hundirapola Kanishta Vidyalaya,Level 5
+50900200314,Uthurawela Dharmaraja Kanishta Vidyalaya,Level 5
+50900200315,Kithalahitiyawa Prathamika Vidyalaya,Level 5
+50900200316,Werahara Kanishta Vidyalaya,Level 5
+50900200317,"Randiya Vidyalaya, Galayaya",Level 5
+50900200318,Daraluwa Kanishta Vidyalaya,Level 5
+50900200319,Nalawalana Kanishta Vidyalaya,Level 5
+50900200320,"Jayasri Primary School, Hunuwila",Level 5
+50900200321,Napokuna Kanishta Vidyalaya,Level 5
+50900200322,Wadumunnegedara Primary School,Level 5
+50900200323,Koralampoththa Prathamika Vidyalaya,Level 5
+50900200324,Giriulla Wickramashila National School,Level 5
+50900200325,Pannala National School,Level 5
+50900200326,Ingradaula Gemunu Madya Maha Vidyalaya,Level 5
+50900200327,Labbala Maha Vidyalaya,Level 5
+50900200328,Hamangalla Maha Vidyalaya,Level 5
+50900200329,Bopitiya Maha Vidyalaya,Level 5
+50900200330,Kawdumunna Maha Vidyalaya,Level 5
+50900200331,Elabadagama Sinhala Maha Vidyalaya,Level 5
+50900200332,"Wayamba Sri Siddhartha Vidyalaya, Murunthange",Level 5
+50900200333,Hangawa Sri Sumangala Prathamika Vidyalaya,Level 5
+50900200334,Narangoda Kanishta Vidyalaya,Level 5
+50900200335,Katugampala Kanishta Vidyalaya,Level 5
+50900200336,Meddepola Primary School,Level 5
+50900200337,Elibichchiya Prathamika Vidyalaya,Level 5
+50900200338,Kohombapola Primary School,Level 5
+50900200339,Dodampoththa Kanishta Vidyalaya,Level 5
+50900200340,Dhammaloka Collegeල Giriulla,Level 5
+50900200341,"Siri Sidath Primary School, Kotuwella",Level 5
+50900200342,Wellawa Prathamika Vidyalaya,Level 5
+50900200343,Kadirapola Prathamika Vidyalaya,Level 5
+50900200344,Horawadunna Kanishta Vidyalaya,Level 5
+50900200345,Maholawa Primary School,Level 5
+50900200346,Balawala Prathamika Vidyalaya,Level 5
+50900200347,Helarajabima Primary School,Level 5
+50900200348,Yataththawala Prathamika Vidyalaya,Level 5
+50900200349,Bammanna Al Qamar Centarl College,Level 5
+50900200350,"Al Ameen Madya Maha Vidyalaya, Alabadagama",Level 5
+50900200351,"Agara Muslim Vidyalaya, Narangoda",Level 5
+50900200352,Mummana Muslim Kanishta Vidyalaya,Level 5
+50900200353,Rakupola Ananda Prathamika Vidyalaya,Level 5
+50900200354,"Siri Sarasavi Prathamika Vidyalaya, Batapothala",Level 5
+50900200355,"Prethiba Prathamika Vidyalaya, Konduruwawela",Level 5
+50900200400,Teacher Center - Maho,Level 4
+50900200500,Teacher Center - Galgamuwa,Level 4
+50900200600,Teacher Center - Dambadeniya,Level 4
+50900300000,Zonal Education Office - Kurunegala,Level 3
+50900300100,Divisional Education Office - Kurunegala,Level 4
+50900300101,Kurunegala Maliyadeva Balika Vidyalaya,Level 5
+50900300102,Kurunegala Maliyadeva College,Level 5
+50900300103,Wellawa Madya Maha Widyalaya,Level 5
+50900300104,Kurunegala St. Anne's College,Level 5
+50900300105,Kurunegala Holy Family Balika Maha Vidyalaya,Level 5
+50900300106,Udabadalawa Sudarshana Maha Vidyalaya,Level 5
+50900300107,"Sri Saranankara Maha Vidyalaya, Kudagalgamuwa",Level 5
+50900300108,Kurunegala Mahinda College,Level 5
+50900300109,Pimburuwellegama Madya Maha Vidyalaya,Level 5
+50900300110,Kurunegala D.B.Welagedara Madya Maha Vidyalaya,Level 5
+50900300111,"Nalandodaya Maha Vidyalaya, Maspotha",Level 5
+50900300112,"Wayamba Jayasanka College, Minhettiya",Level 5
+50900300113,Kurunegala Lakdasa De Mel College,Level 5
+50900300114,Boyagane Maha Vidyalaya,Level 5
+50900300115,Alakoladeniya Kanishta Vidyalaya,Level 5
+50900300116,"Sri Medankara Vidyalaya, Edandawala",Level 5
+50900300117,Thalwita Kanishta Vidyalaya,Level 5
+50900300118,Dematagolla Kanishta Vidyalaya,Level 5
+50900300119,Porapola Kanishta Vidyalaya,Level 5
+50900300120,Kurunegala Sir Jhon Kothalawala Maha Vidyalaya,Level 5
+50900300121,Kurunegala Defence Services College,Level 5
+50900300122,Kurunegala S.W.R.D. Bandaranayake College,Level 5
+50900300123,Weherabenda Muslim Vidyalaya,Level 5
+50900300124,Kurunegala Sri Nishshanka Maha Vidyalaya,Level 5
+50900300125,Wilgamdematawa Vidyalaya,Level 5
+50900300126,Kurunegala Maliyadeva Adarsha Maha Vidyalaya,Level 5
+50900300127,Siyabalangamuwa Primary School,Level 5
+50900300128,Kurunegala President's Girls College,Level 5
+50900300129,Aswedduma Kanishta Vidyalaya,Level 5
+50900300130,Kurunegala Hizbullah Central College,Level 5
+50900300131,Kurunegala Zahira Model Maha Vidyalaya,Level 5
+50900300132,"Hindu Tamil Maha Vidyalaya, Kurunegala",Level 5
+50900300133,"Al-Ashar College, Hadirawalana",Level 5
+50900300134,Kurunegala Wayamba Royal College,Level 5
+50900300135,"Jaya Isuru Primary School, Malkaduwawa",Level 5
+50900300136,Boyagane Vishvoda National School,Level 5
+50900300200,Divisional Education Office - Mawathagama,Level 4
+50900300201,Mawathagama Madya Maha Vidyalaya,Level 5
+50900300202,"Sri Nishshanka Madya Maha Vidyalaya (National School),Indulgodakanda",Level 5
+50900300203,Thalampitiya Prathamika Vidyalaya,Level 5
+50900300204,Thiragama Maha Vidyalaya,Level 5
+50900300205,Digampitiya Sri Piyarathana Maha Vidyalaya,Level 5
+50900300206,Pilessa Maha Vidyalaya,Level 5
+50900300207,Pothubowa Maha Vidyalaya,Level 5
+50900300208,Bogamuwa Central College,Level 5
+50900300209,Meethanwala Maha Vidyalaya,Level 5
+50900300210,"Watareka Maha Vidyalaya, Inguruwatta",Level 5
+50900300211,Weuda Royal Central College,Level 5
+50900300212,Alakoladeniya Bouddha Vidyalaya,Level 5
+50900300213,Kahapathwala Vidyalaya,Level 5
+50900300214,Katupitiya Vidyalaya,Level 5
+50900300215,Ketawala Jonior School,Level 5
+50900300216,"Wayaba Wiswaloka Vidyalaya, Kuda Kowana",Level 5
+50900300217,"Wayamba Swarna Pradeepa Vidyalaya, Koongaswala",Level 5
+50900300218,Doratiyawa Vidyalaya,Level 5
+50900300219,Madawa Udumulla Vidyalaya,Level 5
+50900300220,"Wayamba C W W Kannangara Maha Vidyalaya, Mallawapitiya",Level 5
+50900300221,Meddegama Junior School,Level 5
+50900300222,Yatiwala Sri Gunananda Vidyalaya,Level 5
+50900300223,Athugalpura Sinhaloka Vidyalaya,Level 5
+50900300224,Hengawa Kanishta Vidyalaya,Level 5
+50900300225,Athugalpura Prince College,Level 5
+50900300226,Kosgolla Kanishta Vidyalaya,Level 5
+50900300227,Mawathagama Roman Catholic College,Level 5
+50900300228,"Riyal College, Weuda",Level 5
+50900300229,Akade Primary School,Level 5
+50900300230,Iriminna Kanishta Vidyalaya,Level 5
+50900300231,Gonagaldeniya Primary School,Level 5
+50900300232,Malagane Saraswathie Vidyalaya,Level 5
+50900300233,Paragahadeniya National School,Level 5
+50900300234,"Saraswathi Tamil Vidyalaya, Muwankanda",Level 5
+50900300235,Nakalagamuwa Amina Muslim Vidyalaya,Level 5
+50900300236,"Nottinghill Tamil Vidyalaya, Kahapathwela",Level 5
+50900300237,Morathanna Tamil Vidyalaya,Level 5
+50900300238,"Aththarique Muslim Maha Vidyalaya, Thorayaya",Level 5
+50900300239,Athgalpura Vidya Deepa Vidyalaya,Level 5
+50900300240,"D. P. Wickramasinghe Vidyalaya, Mawathagama",Level 5
+50900300241,"Samodaya Vidyalaya, Mallawapitiya",Level 5
+50900300242,"Al-Hamra Prathamika Vidyalaya, Kurunegala",Level 5
+50900300300,Divisional Education Office - Polgahawela,Level 4
+50900300301,Polgahawela Parakramabahu Madya Maha Vidyalaya,Level 5
+50900300302,"Dutugemunu Central College, Pothuhera",Level 5
+50900300303,Uhumeeya D.S Senanayaka Madya Maha Vidyalaya,Level 5
+50900300304,Udapola Sri Sumangala Maha Vidyalaya,Level 5
+50900300305,Kalugamuwa Maha Vidyalaya,Level 5
+50900300306,Gallehera Maha Vidyalaya,Level 5
+50900300307,Denagamuwa Maha Vidyalaya,Level 5
+50900300308,"Sri Saranankara Sangaraja Maha Vidyalaya, Mahapitiya",Level 5
+50900300309,"Sri Piyarathana Maha Vidyalaya, Mudunna",Level 5
+50900300310,Rathmalgoda Maha Vidyalaya,Level 5
+50900300311,"Wimalasurendra Vidyalaya, Wadakada",Level 5
+50900300312,Polgahawela St. Bernadettes Maha Vidyalaya,Level 5
+50900300313,"Siri Perakum Vidyalaya, Udugama",Level 5
+50900300314,Handugala Primary School,Level 5
+50900300315,"Sri Sonuththara Primary School, Ahugoda",Level 5
+50900300316,"Srimath Anagarika Dharmapala Vidyalaya, Aragoda",Level 5
+50900300317,"Buwanekaba Vidyalaya, Polgahawela",Level 5
+50900300318,"Sri Sumanasara Vidyalaya, Kadurugahamadiththa",Level 5
+50900300319,Kalideliya Kanishta Vidyalaya,Level 5
+50900300320,"Genaral Denzil Kobbekaduwa Primary School, Kiralabokka",Level 5
+50900300321,"Sri Deerananda Vidyalaya, Thalawaththegedara",Level 5
+50900300322,Kumbaloluwa Junior School,Level 5
+50900300323,Gammana Primary School,Level 5
+50900300324,"Sapumal Kumara Vidyalaya, Polgahawela",Level 5
+50900300325,"Wayamba Dharmaraja Vidyaraja Vidyalaya, Weerambugedara",Level 5
+50900300326,"Wayamba Vidyaraja Vidyalaya, Pothuhera",Level 5
+50900300327,Polpitiya Kanishta Vidyalaya,Level 5
+50900300328,Mawaththa Kanishta Vidyalaya,Level 5
+50900300329,Welamitiyawa Siri Gunarathna Kanishta Vidyalaya,Level 5
+50900300330,"Rathnaloka Vidyalaya, Polgahawela",Level 5
+50900300331,Polgahawela St. Bernadette's Model School,Level 5
+50900300332,"Vidyaloka Vidyalaya, Sandagala",Level 5
+50900300333,"Vidarshana Primary School, Hondella",Level 5
+50900300334,Arambepola Primary School,Level 5
+50900300335,"Al-Irfan Central College, Polgahawela",Level 5
+50900300336,"Al-Aqsa Maha Vidyalaya, Oruliyadda",Level 5
+50900300337,"Church of ceylon Tamil Vidyalaya, Polgahawela",Level 5
+50900300338,Pothuhera Muslim Vidyalaya,Level 5
+50900300339,Udapola Tamil Vidyalaya,Level 5
+50900300340,"Kithsirimewan Primary School, Wadakada",Level 5
+50900300400,Teacher center - Malkaduwawa,Level 4
+50900400000,Zonal Education Office - Maho,Level 3
+50900400100,Divisional Education Office - Maho,Level 4
+50900400101,Maho Vijayaba National School.,Level 5
+50900400102,Ambanpola Madya Maha Vidyalaya,Level 5
+50900400103,Balalla U.B. Wanninayaka Maha Vidyalaya,Level 5
+50900400104,Nagollagama Maha Vidyalaya,Level 5
+50900400105,Yapahuwa Maha Vidyalaya,Level 5
+50900400106,Pahalagama Maha Vidyalaya,Level 5
+50900400107,Walaliya Maha Vidyalaya,Level 5
+50900400108,Karambe Maha Vidyalaya,Level 5
+50900400109,Thumbullegama Maha Vidyalaya,Level 5
+50900400110,Thammitagama Maha Vidyalaya,Level 5
+50900400111,Yapaw Royal College,Level 5
+50900400112,Abakolawewa Prathamika Vidyalaya,Level 5
+50900400113,Bakmeegahawaththa Kanishta Vidyalaya,Level 5
+50900400114,Bakmeewewa Kanishta Vidyalaya,Level 5
+50900400115,Bamunugama Kanishta Vidyalaya,Level 5
+50900400116,Borawewa Kanishta Vidyalaya,Level 5
+50900400117,Ellabadagama Prathamika Vidyalaya,Level 5
+50900400118,Embogama Kanishta Vidyalaya,Level 5
+50900400119,Gajaneggama Maha Vidyalaya,Level 5
+50900400120,Hithokadawala Kanishta Vidyalaya,Level 5
+50900400121,Heenuggala Kanishta Vidyalaya,Level 5
+50900400122,Ipalogama Kanishta Vidyalaya,Level 5
+50900400123,Kandubadagama Prathamika Vidyalaya,Level 5
+50900400124,Kasikote Kanishta Vidyalaya,Level 5
+50900400125,Kaththapahuwa Kanishta Vidyalaya,Level 5
+50900400126,"S. Mahinda Prathamika Vidyalaya, Kivullewa",Level 5
+50900400127,Koonwewa Maha Vidyalaya,Level 5
+50900400128,Moragolla Kanishta Vidyalaya,Level 5
+50900400129,Udadivulwewa Maha Vidyalaya,Level 5
+50900400130,Rolawa Prathamika Vidyalaya,Level 5
+50900400131,Uduweeriya Kanishta Vidyalaya,Level 5
+50900400132,Weragala Sri Rahula Prathamika Vidyalaya,Level 5
+50900400133,Embalegoda Maha Vidyalaya,Level 5
+50900400134,Ambanpola Model Prathamika Vidyalaya,Level 5
+50900400135,Embulgiriya Prathamika Vidyalaya,Level 5
+50900400136,Moragaswewa Prathamika Vidyalaya,Level 5
+50900400137,Naramanakotuwa Prathamika Vidyalaya,Level 5
+50900400138,Nelumpathwewa Prathamika Vidyalaya,Level 5
+50900400139,Panwewa Prathamika Vidyalaya,Level 5
+50900400140,"Sri Henry Olcott Model Prathamika Vidyalaya, Palapathwala",Level 5
+50900400141,"Thisnampalagama, Kanishta Vidyalaya",Level 5
+50900400142,Maho Gunapala Malalasekara Model Kanishta Vidyalaya,Level 5
+50900400143,Udagama Prathamika Vidyalaya,Level 5
+50900400144,Dehenaggama Kanishta Vidyalaya,Level 5
+50900400145,Wegedaragama Kanishta Vidyalaya,Level 5
+50900400146,Daladagama Prathamika Vidyalaya,Level 5
+50900400147,Randenigama Muslim Kanishta Vidyalaya,Level 5
+50900400148,Madapokuna Mahira Muslim Kanishta Vidyalaya,Level 5
+50900400149,"Al-Madeena Muslim Maha Vidyalaya, Maho",Level 5
+50900400150,"Hijra Muslim Kanishta Vidyalaya, Ambanpola",Level 5
+50900400151,Polpithigama Buwanekaba Prathamika Vidyalaya,Level 5
+50900400152,Kaluwilapothana Prathamika Vidyalaya,Level 5
+50900400153,"Sri Medhankara Prathamika Vidyalaya, Yapahuwa",Level 5
+50900400154,"Sri Dhammananda Prathamika Vidyalaya, Nagollagama",Level 5
+50900400200,Divisional Education Office - Polpithigama,Level 4
+50900400201,Polpithigama National School,Level 5
+50900400202,Madahapola Mahinda Maha Vidyalaya,Level 5
+50900400203,Makulpotha Maha Vidyalaya,Level 5
+50900400204,Maeliya Maha Vidyalaya,Level 5
+50900400205,Ambagaswewa Maha Vidyalaya,Level 5
+50900400206,Maeliya Balagolla Kanishta Vidyalaya,Level 5
+50900400207,"T.B.Wijesooriya Kanishta Vidyalaya, Dorawerawa",Level 5
+50900400208,Galketiyagama Kanishta Vidyalaya,Level 5
+50900400209,Pansiyagama Maha Vidyalaya,Level 5
+50900400210,Hathigamuwa Primary School,Level 5
+50900400211,"Mahanama Maha Vidyalaya, Koruwawa",Level 5
+50900400212,Madahapola Kanda Kanishta Vidyalaya,Level 5
+50900400213,Niyadawanaya Kanishta Vidyalaya,Level 5
+50900400214,Nakwaththagama Kanishta Vidyalaya,Level 5
+50900400215,Ponnilawa Maha Vidyalaya,Level 5
+50900400216,Rekewala Kanishta Vidyalaya,Level 5
+50900400217,Thalpathwewa Kanishta Vidyalaya,Level 5
+50900400218,Thalakolawewa Maha Vidyalaya,Level 5
+50900400219,Dagama Prathamika Vidyalaya,Level 5
+50900400220,Deegama Prathamika Vidyalaya,Level 5
+50900400221,Galtemwewa Prathamika Vidyalaya,Level 5
+50900400222,Hakwatunaoya Prathamika Vidyalaya,Level 5
+50900400223,Imihaminegama Prathamika Vidyalaya,Level 5
+50900400224,Madithiyagolla Kanishta Vidyalaya,Level 5
+50900400225,Nikawehera Prathamika Vidyalaya,Level 5
+50900400226,Palagama Kanishta Vidyalaya,Level 5
+50900400227,Thelabiyawa Prathamika Vidyalaya,Level 5
+50900400228,Weheragala Prathamika Vidyalaya,Level 5
+50900400229,Kalugalla Kanishta Vidyalaya,Level 5
+50900400230,Pallakale Kanishta Vidyalaya,Level 5
+50900400231,Halmillagolla Kanishta Vidyalaya,Level 5
+50900400232,Potuwepitiya Prathamika Vidyalaya,Level 5
+50900400233,Pothuvila Siri Parakum Maha Vidyalaya,Level 5
+50900400234,Nikawewa Dewanampiyathissa Maha Vidyalaya,Level 5
+50900400235,Borawewa Maha Vidyalaya,Level 5
+50900400236,Kadawala Kanishta Vidyalaya,Level 5
+50900400237,Mapegamuwa Maha Vidyalaya,Level 5
+50900400238,Siyambalangamuwa Kanishta Vidyalaya,Level 5
+50900400239,Kumbukkadawala Kanishta Vidyalaya,Level 5
+50900400240,Thennakoongama Kanishta Vidyalaya,Level 5
+50900400241,Ganekanda Prathamika Vidyalaya,Level 5
+50900400242,Thalawa Prathamika Vidyalaya,Level 5
+50900400243,Tharanagollagama Kanishta Vidyalaya,Level 5
+50900400244,Wambatuwewa Prathamika Vidyalaya,Level 5
+50900400245,Herathgama Prathamika Vidyalaya,Level 5
+50900400246,Pohorawaththa Sri Siddhartha Prathamika Vidyalaya,Level 5
+50900400247,Rambawewa Buwanekaba Prathamika Vidyalaya,Level 5
+50900400248,Rekeula Prathamika Vidyalaya,Level 5
+50900400249,Bambaragalayaya Kanishta Vidyalaya,Level 5
+50900400250,"Walagamba Prathamika Vidyalaya, Kattamberiya",Level 5
+50900400251,Koruwawa Prathamika Vidyalaya,Level 5
+50900400252,Polpithigama Rajasinghe Prathamika Vidyalaya,Level 5
+50900400253,Nikawewa Saliyakumara Model Prathamika Vidyalaya,Level 5
+50900400300,Divisional Education Office - Galgamuwa,Level 4
+50900400301,Galgamuwa U. B. Wanninaya National College,Level 5
+50900400302,Ehetuwewa Bandarnayaka Maha Vidyalaya,Level 5
+50900400303,"Sri Siddartha Maha Vidyalaya, Kudakathnoruwa",Level 5
+50900400304,Usgala Thissa Maha Vidyalaya,Level 5
+50900400305,Buduruwakanda Maha Vidyalaya,Level 5
+50900400306,Usgala Gemunu Maha Vidyalaya,Level 5
+50900400307,Mahananneriya Maha Vidyalaya,Level 5
+50900400308,Meegalewa Mahweli National School,Level 5
+50900400309,Atharagalla Kanishta Vidyalaya,Level 5
+50900400310,Ihala Nanneriya Kanishta Vidyalaya,Level 5
+50900400311,Kallanchiya Prathamika Vidyalaya,Level 5
+50900400312,Galpitiya Kanishta Vidyalaya,Level 5
+50900400313,Dimbulagala Vidyalaya,Level 5
+50900400314,Dewagiripura Walagamba Maha Vidyalaya,Level 5
+50900400315,Nithalawa Kanishta Vidyalaya,Level 5
+50900400316,Paluwa Vidyadeepa Vidyalaya,Level 5
+50900400317,Bulnewa Vidyalaya,Level 5
+50900400318,Maha Embogama Model Kanishta Vidyalaya,Level 5
+50900400319,Mahathorawa Kanishta Vidyalaya,Level 5
+50900400320,Madadobe Prathamika Vidyalaya,Level 5
+50900400321,Usgala Saliyaraja Kanishta Vidyalaya,Level 5
+50900400322,Hunugallewa Kanishta Vidyalaya,Level 5
+50900400323,Palukadawala Sri Sumana Vidyalaya,Level 5
+50900400324,Eriyawa Primary School,Level 5
+50900400325,Makalanegama Vidyalaya,Level 5
+50900400326,Mahagalkadawala Mahasen Vidyalaya,Level 5
+50900400327,Medinnoruwa Kanishta Vidyalaya,Level 5
+50900400328,Jayabima Siri Sudassi Prathamika Vidyalaya,Level 5
+50900400329,Peddogama Kanishta Widuhala,Level 5
+50900400330,Vikadenigama Kanishta Vidyalaya,Level 5
+50900400331,Ehetuwewa Model Primary School,Level 5
+50900400332,Ihalagama Kanishta Vidyalaya,Level 5
+50900400333,Ihala Konwewa Primary School,Level 5
+50900400334,Kaduruwewa Prathamika Vidyalaya,Level 5
+50900400335,Nakolagane Kanishta Vidyalaya,Level 5
+50900400336,Nahettikulama Primary School,Level 5
+50900400337,Pothanegama Primary School,Level 5
+50900400338,"Wayamba Janadhipathi Vidyalaya, Palukandewa",Level 5
+50900400339,Manakkuliyagama Primary School,Level 5
+50900400340,Wanniamunukole Prathamika Vidyalaya,Level 5
+50900400341,Siyambaleewa Prathamika Vidyalaya,Level 5
+50900400342,Meegalewa Primary School,Level 5
+50900400343,Wanekolaniaya Primary School,Level 5
+50900400344,Galapitagigana Prathamika Vidyalaya,Level 5
+50900400345,Mahawelithenna Primary School,Level 5
+50900400346,Bongamuwa Prathamika Vidyalaya,Level 5
+50900400347,Ganangamuwa Primary School,Level 5
+50900400348,Galgamuwa Model Muslim Maha Vidyalaya,Level 5
+50900400349,Galgamuwa Roman Catholic Tamil Vidyalaya,Level 5
+50900400350,Gallewa Muslim Vidyalaya,Level 5
+50900400351,Jagama Al Hakim Muslim Vidalaya,Level 5
+50900400352,Kattakaduwa Muslim Vidyalaya,Level 5
+50900400353,Karambewa Almina Maha Vidyalaya,Level 5
+50900400354,Angamugama Muslim Kanishta Vidyalaya,Level 5
+50900400355,Banadaragama Primary School,Level 5
+50900400356,"Sirimawo Bandaranayake Primary School, Galgamuwa",Level 5
+50900400357,Mahananneriya Primary School,Level 5
+50900400400,Divisional Education Office - Giribawa,Level 4
+50900400401,Pahala Giribawa Maha Vidyalaya,Level 5
+50900400402,"Sole Maha Vidyalaya, Solewewa",Level 5
+50900400403,Perakumpura National School,Level 5
+50900400404,Mailewa Maha Vidyalaya,Level 5
+50900400405,Thambuththa Maha Vidyalaya,Level 5
+50900400406,Wannikudawewa Sirisagabo Maha Vidyalaya,Level 5
+50900400407,Warawewa Maha Vidyalaya,Level 5
+50900400408,"Saliya Asoka Nawodyya School, Saliya Asokapura",Level 5
+50900400409,Rajanganaya Yaya 6 Vidyalaya,Level 5
+50900400410,Rajanganaya Yaya 4/2 Prathamika Vidyalaya,Level 5
+50900400411,Ihalamaradankadawala Prathamika Vidyalaya,Level 5
+50900400412,"Gampola Kanishta Vidyalaya, Pahala Giribawa",Level 5
+50900400413,Thammennawa Kanishta Vidyalaya,Level 5
+50900400414,Jayanthipura Kanishta Vidyalaya,Level 5
+50900400415,Pothanegama Vijaya Kanishta Vidyalaya,Level 5
+50900400416,Hettiarachchigama Prathamika Vidyalaya,Level 5
+50900400417,Dharmashoka Kanishta Vidyalaya Dhamsopura,Level 5
+50900400418,Aliyawetunuwewa Muslim Maha Vidyalaya,Level 5
+50900400419,Wannikudawewa Muslim Kanishta Vidyalaya,Level 5
+50900400420,Walpaluwa Muslim Maha Vidyalaya,Level 5
+50900400421,Bambare Prathamika Vidyalaya,Level 5
+50900400422,Gurulupitigama Prathamika Vidyalaya,Level 5
+50900400423,"Siddhartha Prathamika Vidyalaya, Kokmaduwa",Level 5
+50900400424,Pahala Giribawa Prathamika Vidyalaya,Level 5
+50900500000,Zonal Education Office - Nikaweratiya,Level 3
+50900500100,Divisional Education Office - Nikaweratiya,Level 4
+50900500101,Nikaweratiya Muslim Madya Maha Vidyalaya,Level 5
+50900500102,Nikaweratiya Mahasen National School.,Level 5
+50900500103,Thumbulla Maha Vidyalaya,Level 5
+50900500104,Divullegoda Maha Vidyalaya,Level 5
+50900500105,Heelogama Maha Vidyalaya,Level 5
+50900500106,"Kavisena Herath Maha Vidyalaya, Hulugalla",Level 5
+50900500107,Hulogedara Maha Vidyalaya,Level 5
+50900500108,Ihalagama Kanishta Vidyalaya,Level 5
+50900500109,Othota Radenigama Kanishta Vidyalaya,Level 5
+50900500110,Kebellewa Kanishta Vidyalaya,Level 5
+50900500111,Kumbukwewa Kanishta Vidyalaya,Level 5
+50900500112,Galagedara Kanishta Vidyalaya,Level 5
+50900500113,Thimbiriyawa Kanishta Vidyalaya,Level 5
+50900500114,Danduwawa Maha Vidyalaya,Level 5
+50900500115,"Sri Dhamarakkhitha Model Vidyalaya, Dalukgolla",Level 5
+50900500116,"Prince College, Hulogedara",Level 5
+50900500117,"D.S.Senanayaka Primary School, Millagoda",Level 5
+50900500118,Wanduressa Sri Buddarakkitha Vidyalaya,Level 5
+50900500119,Wanni Kirindigalla Prathamika Vidyalaya,Level 5
+50900500120,Halmilewa Kanishta Vidyalaya,Level 5
+50900500121,Udahenegama Primary School,Level 5
+50900500122,Nikaweratiya Jayanthi Central College,Level 5
+50900500123,Rambapokuna Prathamika Vidyalaya,Level 5
+50900500124,"Wayamba President's College, Hewenpelessa",Level 5
+50900500125,"Rajabima Vidyalaya, Magallegama",Level 5
+50900500126,Othota Divullewa Primary School,Level 5
+50900500127,Sudeeragama Primary School,Level 5
+50900500128,Neeraliyadda Kanishta Vidyalaya,Level 5
+50900500129,Nammuwawa Muslim Maha Vidyalaya,Level 5
+50900500130,Katagamuwa Primary School,Level 5
+50900500131,Manapaya Prathamika Vidyalaya,Level 5
+50900500132,Wasiwewa Primary School,Level 5
+50900500200,Divisional Education Office - Kotawehera,Level 4
+50900500201,Kadigawa Maha Vidyalaya,Level 5
+50900500202,Girilla Madya Maha Vidyalaya,Level 5
+50900500203,Digannewa Sri Devamiththha Maha Vidyalaya,Level 5
+50900500204,"H.M. Rasnayaka Madya Maha Vidyalaya, Rasnayakapura",Level 5
+50900500205,Meewellawa Maha Vidyalaya,Level 5
+50900500206,Monnekulama Maha Vidyalaya,Level 5
+50900500207,Halambagala Maha Vidyalaya,Level 5
+50900500208,"Aluthgama Kanishta Vidyalaya, Digannewa",Level 5
+50900500209,Udunowa Kanishta Vidyalaya,Level 5
+50900500210,Unagolla Kanishta Vidyalaya,Level 5
+50900500211,Kelegama Kanishta Vidyalaya,Level 5
+50900500212,"Kirinda Kanishta Vidyalaya, Mahagirilla",Level 5
+50900500213,Kudaravaliya Kanishta Vidyalaya,Level 5
+50900500214,Galkadawala Kanishta Vidyalaya,Level 5
+50900500215,Divullapitiya Prathamika Vidyalaya,Level 5
+50900500216,Nawana Maha Vidyalaya,Level 5
+50900500217,Nelumgala Prathamika Vidyalaya,Level 5
+50900500218,Palugolla Yaya 10 Maha Vidyalaya,Level 5
+50900500219,Mahamithawa Kanishta Vidyalaya,Level 5
+50900500220,Halabe Kanishta Vidyalaya,Level 5
+50900500221,Ithewa Kanishta Vidyalaya,Level 5
+50900500222,Unale Prathamika Vidyalaya,Level 5
+50900500223,Ottukulam Hijra Muslim Maha Vidyalaya,Level 5
+50900500224,Kuravikulama Prathamika Vidyalaya,Level 5
+50900500225,Theiyadaluwa Prathamika Vidyalaya,Level 5
+50900500226,"Nagansole Prathamika Vidyalaya, Rasnayakapura",Level 5
+50900500227,East Thimbiriyawa Kanishta Vidyalaya,Level 5
+50900500228,Magurankadawala Prathamika Vidyalaya,Level 5
+50900500229,Ihala Ottukulama Kanishta Vidyalaya,Level 5
+50900500230,Elagammillawa Kanishta Vidyalaya,Level 5
+50900500231,Keenawa Prathamika Vidyalaya,Level 5
+50900500232,Sirisethagama Prathamika Vidyalaya,Level 5
+50900500233,Siyambalewa Sri Sobhitha Prathamika Vidyalaya,Level 5
+50900500234,Gallegoda Prathamika Vidyalaya,Level 5
+50900500235,East Moragollagama Prathamika Vidyalaya,Level 5
+50900500236,"U.B. Wanninayaka Madya Maha Vidyalaya, Kotawehera",Level 5
+50900500237,Abukkagama Muslim Maha Vidyalaya,Level 5
+50900500238,Galpanawa Muslim Kanishta Vidyalaya,Level 5
+50900500239,Kollandaluwa Muslim Kanishta Vidyalaya,Level 5
+50900500240,Ambagaswewa Prathamika Vidyalaya,Level 5
+50900500241,Kudamithawa Prathamika Vidyalaya,Level 5
+50900500242,Digannewa Prathamika Vidyalaya,Level 5
+50900500200,Divisional Education Office - Kobeigane,Level 4
+50900500201,Kobeigane Sri Parackrama National School,Level 5
+50900500202,"I.M.R.A.Iriyagolla Central College, Boraluwewa",Level 5
+50900500203,"Siri Sumanasiri Maha Vidyalaya, Siyabalagahawetiya",Level 5
+50900500204,Vithikuliya Maha Vidyalaya,Level 5
+50900500205,Alahenegama Maha Vidyalaya,Level 5
+50900500206,Ihalagama Gamunu Vidyalaya,Level 5
+50900500207,"Siri Perakum Prathamika Vidyalaya, Kosgahawewa",Level 5
+50900500208,Thelahera Maha Vidyalaya,Level 5
+50900500209,Pannawa Sinhala Prathamika Vidyalaya,Level 5
+50900500210,Pahala Baladora Prathamika Vidyalaya,Level 5
+50900500211,Pubbiliya Kanishta Vidyalaya,Level 5
+50900500212,Mellagaswewa Prathamika Vidyalaya,Level 5
+50900500213,Midellaea Wimalasheela Maha Vidyalaya,Level 5
+50900500214,Halmillakotuwa Kanishta Vidyalaya,Level 5
+50900500215,Hengamuwa Maha Vidyalaya,Level 5
+50900500216,Assedduma Prathamika Vidyalaya,Level 5
+50900500217,Getadiwulwewa Prathamika Vidyalaya,Level 5
+50900500218,Bamunugama Maha Vidyalaya,Level 5
+50900500219,Leekolaweea Primary School,Level 5
+50900500220,Lolanwewa Sinhala Prathamika Vidyalaya,Level 5
+50900500221,Hathalawa Kanishta Vidyalaya,Level 5
+50900500222,Pannawa Muslim Maha Vidyalaya,Level 5
+50900500223,"Al -Ilmiya Maha Vidyalaya, Boraluwewa",Level 5
+50900500224,"Assiraj Muslim Prathamika Vidyalaya, Kobeigane",Level 5
+50900500225,Ambalayagama Primary School,Level 5
+50900500226,Samagigama Prathamika Vidyalaya,Level 5
+50900500300,Divisional Education Office - Wariyapola,Level 4
+50900500301,Ithanawaththa Maha Vidyalaya,Level 5
+50900500302,"Thissa Madya Maha Vidyalaya, Katupotha",Level 5
+50900500303,Bamunakotuwa Isipathana Madya Maha Vidyalaya,Level 5
+50900500304,Wariyapola Sri Sumangala Madya Maha Vidyalaya,Level 5
+50900500305,Amunugama Kanishta Vidyalaya,Level 5
+50900500306,Kanotuwa Kanishta Vidyalaya,Level 5
+50900500307,Kedapathwehera Kanishta Vidyalaya,Level 5
+50900500308,Kongolla Kanishta Vidyalaya,Level 5
+50900500309,Ganthiriyawa Maha Vidyalaya,Level 5
+50900500310,Goluwawa Kanishta Vidyalaya,Level 5
+50900500311,Thabilipola Kanishta Vidyalaya,Level 5
+50900500312,Demataluwa Maha Vidyalaya,Level 5
+50900500313,Nathagane Kanishta Vidyalaya,Level 5
+50900500314,Nawinna Kanishta Vidyalaya,Level 5
+50900500315,"Mahindodaya Prathamika Vidyalaya, Panadare",Level 5
+50900500316,Mahakeliya Maha Vidyalaya,Level 5
+50900500317,Rathmale Sri Rewatha Kanishta Vidyalaya,Level 5
+50900500318,Walpola Kanishta Vidyalaya,Level 5
+50900500319,Wariyapola Sri Ganodaya Madya Maha Vidyalaya,Level 5
+50900500320,"Sri Sarananda Kanishta Vidyalaya, Wallagala",Level 5
+50900500321,"Sri Sumangala Prathamika Vidyalaya, Horombuwa",Level 5
+50900500322,Katupotha Prathamika Vidyalaya,Level 5
+50900500323,Kithulwahara Kanishta Vidyalaya,Level 5
+50900500324,Thalgamuwa Prathamika Vidyalaya,Level 5
+50900500325,Malasna Dewaraja Prathamika Vidyalaya,Level 5
+50900500326,Malwana Prathamika Vidyalaya,Level 5
+50900500327,Abakadawara Maha Vidyalaya,Level 5
+50900500328,Awlegama Sangabodhi Madya Maha Vidyalaya,Level 5
+50900500329,Minuwangate Maha Vidyalaya,Level 5
+50900500330,Karagaswewa Kanishta Vidyalaya,Level 5
+50900500331,Kurunawa Kanishta Vidyalaya,Level 5
+50900500332,Naramana Walagamba Maha Vidyalaya,Level 5
+50900500333,Nabadawewa Prathamika Vidyalaya,Level 5
+50900500334,"Sri Sunanda Maha Vidyalaya, Padeniya",Level 5
+50900500335,Bayawa Kanishta Vidyalaya,Level 5
+50900500336,Malagane Maha Vidyalaya,Level 5
+50900500337,Rambukana Prathamika Vidyalaya,Level 5
+50900500338,Wepaththange Prathamika Vidyalaya,Level 5
+50900500339,Halthennakoongama Maha Vidyalaya,Level 5
+50900500340,Ethawa Prathamika Vidyalaya,Level 5
+50900500341,Katagamuwa Prathamika Vidyalaya,Level 5
+50900500342,Thabarawa Prathamika Vidyalaya,Level 5
+50900500343,Netiya Kanishta Vidyalaya,Level 5
+50900500344,Bogoda Prathamika Vidyalaya,Level 5
+50900500345,Mirihanegama Maha Vidyalaya,Level 5
+50900500346,Sundaragama Prathamika Vidyalaya,Level 5
+50900500347,Herathgama Prathamika Vidyalaya,Level 5
+50900500348,Walpaluwa Prathamika Vidyalaya,Level 5
+50900500349,Konoththa Prathamika Vidyalaya,Level 5
+50900500350,Dabaliyadda Prathamika Vidyalaya,Level 5
+50900500351,Henegedara Muslim Kanishta Vidyalaya,Level 5
+50900500352,Mirihampitiya Muslim Kanishta Vidyalaya,Level 5
+50900500353,"Babul Adam Muslim Kanishta Vidyalaya, Mallapoththa",Level 5
+50900500354,Minuwangete Prathamika Vidyalaya,Level 5
+50900500400,Teacher Center - Nikaweratiya,Level 4
+50900600000,Zonal Education Office - Ibbagamuwa,Level 3
+50900600100,Divisional Education Office - Ibbagamuwa,Level 4
+50900600101,Ibbagamuwa Central College,Level 5
+50900600102,Gokeralla Sir Wiliyam Gopallawa Madya Maha Vidyalaya,Level 5
+50900600103,Kumbukwewa Maha Vidyalaya,Level 5
+50900600104,"Thakshala Maha Vidyalaya, Mahamukalanyaya",Level 5
+50900600105,Medamulla De Mel Maha Vidyalaya,Level 5
+50900600106,Ibbagamuwa Model School,Level 5
+50900600107,Omaragolla Maha Vidyalaya,Level 5
+50900600108,Kiribamuna Prathamika Vidyalaya,Level 5
+50900600109,Gassandalupotha Vidyalaya,Level 5
+50900600110,Melsiripura Namal Anga Maha Vidyalaya,Level 5
+50900600111,Diddeniya Vidyalaya,Level 5
+50900600112,Akkarapanaha Kanishta Vidyalaya,Level 5
+50900600113,"Wayamba President's College, Ibbagamuwa",Level 5
+50900600114,Udakendawala Siri Saranankara Vidyalaya,Level 5
+50900600115,Ussawa Prathamika Vidyalaya,Level 5
+50900600116,Kiridigalla Prathamika Vidyalaya,Level 5
+50900600117,"Siddartha Vidyalaya, Ibbagamuwa",Level 5
+50900600118,Thalangamuwa Kanishta Vidyalaya,Level 5
+50900600119,"Nabeta Vidyalaya, Melsiripura",Level 5
+50900600120,"Nelawa Vidyalaya, Ibbagamuwa",Level 5
+50900600121,Nembilikumbura Prathamika Vidyalaya,Level 5
+50900600122,"C.W.W.Kannangara Prathamika Vidyalaya, Nindapalla",Level 5
+50900600123,Neerammula Jayanthi Prathamika Vidyalaya,Level 5
+50900600124,"Weera Coloneal Niyomal Palipana Vidyalaya, Ibbagamuwa",Level 5
+50900600125,Lenawav Prathamika Vidyalaya,Level 5
+50900600126,Hangamuwa Prathamika Vidyalaya,Level 5
+50900600127,"Sri Wimalasara Prathamika Vidyalaya, Udathammita",Level 5
+50900600128,"Weera Parakum Vidyalaya, Pallekendawala",Level 5
+50900600129,Godarathmale Vidyartha Prathamika vidyalaya,Level 5
+50900600130,Sarubima Supipi Vidyalaya,Level 5
+50900600131,Welgala Kanishta Vidyalaya,Level 5
+50900600132,Hipawwa Detuthis Kanishta Vidyalaya,Level 5
+50900600133,"Unit 3 Mahasen Vidyalaya, Nelliya",Level 5
+50900600134,Manapaya Prathamika Vidyalaya,Level 5
+50900600135,Rankirimada Kanishta Vidyalaya,Level 5
+50900600136,Wewalagama Kanishta Vidyalaya,Level 5
+50900600137,"Al Mina Muslim Vidyalaya, Ibbagamuwa",Level 5
+50900600138,"Hameediya Muslim Maha Vidyalaya, Ibbagamuwa",Level 5
+50900600139,Maiwela Muslim Vidyalaya,Level 5
+50900600140,"Madige Muslim Vidyalaya, Ibbagamuwa",Level 5
+50900600200,Divisional Education Office - Rideegama,Level 4
+50900600201,Rambadagalla Madya Maha Vidyalaya,Level 5
+50900600202,Morathiha Sri Gamini Madya Maha Vidyalaya,Level 5
+50900600203,Gonigoda Madya Maha Vidyalaya,Level 5
+50900600204,Dodamgaslanda Sir John Kothalawala Madya Maha Vidyalaya,Level 5
+50900600205,"Sri Vidyaraja Maha Vidyalaya, Palleyaya",Level 5
+50900600206,"Prathirajadewa Maha Vidyalaya, Pussella",Level 5
+50900600207,Buluwala Maha Vidyalaya,Level 5
+50900600208,Koswaththa Maha Vidyalaya,Level 5
+50900600209,"Weerawalagamba Maha Vidyalaya, Maduragoda",Level 5
+50900600210,"Nalandawa Prathamika Vidyalaya, Dodamgaslanda",Level 5
+50900600211,Ambakote Prathamika Vidyalaya,Level 5
+50900600212,Ikiriwatha Prathamika Vidyalaya,Level 5
+50900600213,Iriyagolla Maha Vidyalaya,Level 5
+50900600214,Egodamulla Prathamika Vidyalaya,Level 5
+50900600215,Katiyawa Prathamika Vidyalaya,Level 5
+50900600216,Kandupalatha Kanishta Vidyalaya,Level 5
+50900600217,Delvita Maha Vidyalaya,Level 5
+50900600218,Niyangama Prathamika Vidyalaya,Level 5
+50900600219,Pahala Ogodapola Kanishta Vidyalaya,Level 5
+50900600220,Medagama Kanishta Vidyalaya,Level 5
+50900600221,"Mirissal Kanishta Vidyalaya, Pihimbuwa",Level 5
+50900600222,Morathiha Vidyalaya,Level 5
+50900600223,Rathvita Prathamika Vidyalaya,Level 5
+50900600224,Rantheti Kamda Prathamika Vidyalaya,Level 5
+50900600225,"Rideevihara Maha Vidyalaya, Rideegama",Level 5
+50900600226,Reddagoda Kanishta Vidyalaya,Level 5
+50900600227,Udanvita Maha Vidyalaya,Level 5
+50900600228,Kalugahathenna Prathamika Vidyalaya,Level 5
+50900600229,Kiribathgalla Kanishta Vidyalaya,Level 5
+50900600230,Balawaththala Prathamika Vidyalaya,Level 5
+50900600231,Alawa Kanishta Vidyalaya,Level 5
+50900600232,Nelaulla Prathamika Vidyalaya,Level 5
+50900600233,Dodamgaslanda Rajakeeya Vidyalaya,Level 5
+50900600234,Pussella Prathamika Vidyalaya,Level 5
+50900600235,Buluwalakanda Prathamika Vidyalaya,Level 5
+50900600236,Lihiniwehera Prathamika Vidyalaya,Level 5
+50900600237,Dunumawa Prathamika Vidyalaya,Level 5
+50900600238,Udahorombuwa Prathamika Vidyalaya,Level 5
+50900600239,Panagamuwa Annoor Madya Maha Vidyalaya,Level 5
+50900600240,"Al Ashraq Maha Vidyalaya, Thalgaspitiya",Level 5
+50900600241,"Al-Huda Maha Vidyalaya, Rambukandana",Level 5
+50900600242,Thelambugalla Muslim vidyalaya,Level 5
+50900600243,Kawisigamuwa Prathamika Vidyalaya,Level 5
+50900600244,"Weerawalagamba Prathamika Vidyalaya, Kelemulla",Level 5
+50900600300,Divisional Education Office - Ganewatta,Level 4
+50900600301,Kanawa Kanishta Vidyalaya,Level 5
+50900600302,Nikagolla Prathamika Vidyalaya,Level 5
+50900600303,Kumbukgete Madya Maha Vidyalaya,Level 5
+50900600304,Ganewaththa S.B. Herath Madya Maha Vidyalaya,Level 5
+50900600305,Pothuwagonna Maha Vidyalaya,Level 5
+50900600306,Othuwela Prathamika Vidyalaya,Level 5
+50900600307,Thambagalla Prathamika Vidyalaya,Level 5
+50900600308,Nabiriththawewa Maha Vidyalaya,Level 5
+50900600309,Makulwewa Maha Vidyalaya,Level 5
+50900600310,"Wayamba Shilpaloka Prathamika Vidyalaya, Wegolla",Level 5
+50900600311,Hiripitiya Modern Primary School,Level 5
+50900600312,Hunupola Maha Vidyalaya,Level 5
+50900600313,"Aluthgama Prathamika Vidyalaya, Nikadalupotha",Level 5
+50900600314,Uyangalle Kanishta Vidyalaya,Level 5
+50900600315,Galagedara Chandrawansha Prathamika Vidyalaya,Level 5
+50900600316,Thiththawella Prathamika Vidyalaya,Level 5
+50900600317,Digankoonwewa Prathamika Vidyalaya,Level 5
+50900600318,Nindagama Prathamika Vidyalaya,Level 5
+50900600319,Neeraviya Prathamika Vidyalaya,Level 5
+50900600320,Waduwawa Prathamika Vidyalaya,Level 5
+50900600321,Thimbiriwewa Kanishta Vidyalaya,Level 5
+50900600322,Hettigama Prathamika Vidyalaya,Level 5
+50900600323,Meegahaela Prathamika Vidyalaya,Level 5
+50900600324,"Al Hikma Muslim Maha Vidyalaya, Thiththawelgala",Level 5
+50900600325,"Al Akram Muslim Kanishta Vidyalaya, Inguruwaththa",Level 5
+50900700000,Zonal Education Office - Chilaw,Level 3
+50900700100,Divisional Education Office - Arachchikattuwa,Level 4
+50900700101,Pankulawa Nawodya Maha Vidyalaya,Level 5
+50900700102,Wijayakatupotha Maha Vidyalaya,Level 5
+50900700103,Battuluoya Maha Vidyalaya,Level 5
+50900700104,Halambawatawana Maha Vidyalaya,Level 5
+50900700105,Aththanganaya Kanishta Vidyalaya,Level 5
+50900700106,Mahamaeliya Kanishta Vidyalaya,Level 5
+50900700107,Muthupanthiya Kanishta Vidyalaya,Level 5
+50900700108,Karukkuliya Maha Vidyalaya,Level 5
+50900700109,Bangadeniya Maha Vidyalaya,Level 5
+50900700110,Karukkupane Tamil Vidyalaya,Level 5
+50900700111,Dematapitiya Kanishta Vidyalaya,Level 5
+50900700112,Mandalana Kanishta Vidyalaya,Level 5
+50900700113,Rajakadaluwa Kanishta Vidyalaya,Level 5
+50900700114,Arachchikattuwa Prathamika Vidyalaya,Level 5
+50900700115,"Kusala Tamil Vidyalaya, Bngadeniya",Level 5
+50900700116,"Coreapura Kanishta Vidyalaya, Bngadeniya",Level 5
+50900700117,Elivitiya Kanishta Vidyalaya,Level 5
+50900700118,Welipelessa Kanishta Vidyalaya,Level 5
+50900700119,Kottapitiya Prathamika Vidyalaya,Level 5
+50900700120,"Dhammaloka Kanishta Vidyalaya, Adippala",Level 5
+50900700121,Pinkattiya Prathamika Vidyalaya,Level 5
+50900700200,Divisional Education Office - Chilaw,Level 4
+50900700201,Chilaw St. Mary's College,Level 5
+50900700202,Chilaw Carmel Girl's Central College,Level 5
+50900700203,"Nazriya Central College, Chilaw",Level 5
+50900700204,"St. Bernadette's College, Chilaw",Level 5
+50900700205,Ambakandawila St. Roches School,Level 5
+50900700206,"Bishop Edmond Peiris Primary School, Chilaw",Level 5
+50900700207,"St. Mary's Primary Balika Vidyalaya, Chilaw",Level 5
+50900700208,Egodawella St. Sebastiyan School,Level 5
+50900700209,Chilaw Ananda National School,Level 5
+50900700210,"Wijaya Maha Vidyalaya, Chillaw",Level 5
+50900700211,Kanjukkuliya St. Benadict Kanishta Vidyalaya,Level 5
+50900700212,"Siri Sujatha Model School, Kakkapalliya",Level 5
+50900700213,Ilippadeniya Kanishta Vidyalaya,Level 5
+50900700214,"Merawala St. Joseph's Vidyalaya, Chilaw",Level 5
+50900700215,"Sri Buddharakkhitha Vidyalaya, Mugunuwatawana",Level 5
+50900700216,"Sawarana Muslim Vidyalaya, Chilaw",Level 5
+50900700217,Sri Vadivambigai Hindu College,Level 5
+50900700218,Manakkulama Junior School,Level 5
+50900700219,Bandarawatta Primary School,Level 5
+50900700220,Munneswarama Sinhala Primary School,Level 5
+50900700221,Sippikalana Kanishta Vidyalaya,Level 5
+50900700222,Thissogama Primary School,Level 5
+50900700223,Ariyagama Siddhartha Maha Vidyalaya,Level 5
+50900700224,Madampe Senanayaka National School,Level 5
+50900700225,Madampe Karukkuwa Sugathananda Maha Vidyalaya,Level 5
+50900700226,"St. Sebastians College, Madampe",Level 5
+50900700227,"Herath Gunarathna Maha Vidyalaya, Galmuruwa",Level 5
+50900700228,Thimbirigaswela Junior School,Level 5
+50900700229,"Al Misbah Muslim Maha Vidyalaya, Madampe",Level 5
+50900700230,Mugunuwatawana Senanayaka Kanishta Vidyalaya,Level 5
+50900700231,Sembukattiya Primary School,Level 5
+50900700232,Suduwella Model Primary School,Level 5
+50900700233,Pambala Vidyalaya,Level 5
+50900700234,Galmuruwa Junior School,Level 5
+50900700235,Kadupiti Madampe Dharmapala Vidyalaya,Level 5
+50900700236,Medagama Abhaya Model School,Level 5
+50900700237,"G.C.S. Corea Maha Vidyalaya, Karavitagara",Level 5
+50900700238,Kokkawila Kanishta Vidyalaya,Level 5
+50900700239,Mahagama Kanishta Vidyalaya,Level 5
+50900700240,"C.W.W. Kannangara Madya Maha Vidyalaya, Puliyankara",Level 5
+50900700241,Nankadawara Vidyartha Adarsha Kanishta Vidyalaya,Level 5
+50900700242,Thambagalla Primary School,Level 5
+50900700243,Athuwana Senanayake Primary School,Level 5
+50900700244,Punchiwilaththawa Kanishta Vidyalaya,Level 5
+50900700245,Dematapitiya Primary School,Level 5
+50900700246,Heenagara Primary School,Level 5
+50900700247,Dambakele Primary School,Level 5
+50900700300,Divisional Education Office - Nattandiya,Level 4
+50900700301,Mahawewa Sri Darmarama Maha Vidyalaya,Level 5
+50900700302,Thoduwawa St. Anthony's Navodya Maha Vidyalaya,Level 5
+50900700303,Mattakotuwa Kanishta Vidyalaya,Level 5
+50900700304,Mattakotuwa Werala Kanishta Vidyalaya,Level 5
+50900700305,Koswadiya Saraswathi Vidyalaya,Level 5
+50900700306,Iranawila St. Peter's School,Level 5
+50900700307,Kudawewa Baudda Kanishta Vidyalaya,Level 5
+50900700308,Maravila St. Xavier's Madya Maha Vidyalaya,Level 5
+50900700309,Marawila Holly Family Balika Madya Maha Vidyalaya,Level 5
+50900700310,Thalwila St.Theresa Kanishta Vidyalaya,Level 5
+50900700311,"Horagolla Vidyalaya, Marawila",Level 5
+50900700312,Marawila Boys' Junior School,Level 5
+50900700313,"Holy Family Balika Primary School, Marawila",Level 5
+50900700314,Marandawella Junior School,Level 5
+50900700315,Haththiniya Model School,Level 5
+50900700316,Thalwilawella Kanishta Vidyalaya,Level 5
+50900700317,Naththandiya Dhammissara National School,Level 5
+50900700318,Naththandiya Lourdes College,Level 5
+50900700319,Naththandiya Preident's College,Level 5
+50900700320,Thabbowa Kanishta Vidyalaya,Level 5
+50900700321,Pahala Kottaramulla Sinhala Kanishta Vidyalaya,Level 5
+50900700322,Pilakatumulla Junior School,Level 5
+50900700323,Ihala Kottaramulla Al-Hira Muslim Maha Vidyalaya,Level 5
+50900700324,Naththandiya Zahira Muslim Vidyalaya,Level 5
+50900700325,Thummodara Muslim Vidyalaya,Level 5
+50900700326,Katuneriya St. Sebastians Central College,Level 5
+50900700327,Dematapitiya Junior College,Level 5
+50900700328,Mudukatuwa Roman Catholic School,Level 5
+50900700329,"Sumanadhamma Maha Vidyalaya, Mudukatuwa",Level 5
+50900700330,Mawila Mahinda Buddhist Kanishta Vidyalaya,Level 5
+50900700331,Mawila Jayalathmatha Junior School,Level 5
+50900700332,Ihala Katuneriya Primary School,Level 5
+50900700333,Walahapitiya Maha Vidyalaya,Level 5
+50900700334,Thalgasagara Primary School,Level 5
+50900700335,Yatakalana Dharma Wijaya Kanishta Vidyalaya,Level 5
+50900700336,Hewana Kanishta Vidyalaya,Level 5
+50900700337,Medagoda Kanishta Vidyalaya,Level 5
+50900700338,Pahala Walahapitiya Dharmaraja Kanishta Vidyalaya,Level 5
+50900700339,Narawila Sri Gunarathana Madya Maha Vidyalaya,Level 5
+50900700340,Dunkannawa Kanishta Vidyalaya,Level 5
+50900700341,"Sri Seelananda Maha Vidyalaya, Koswatta",Level 5
+50900700342,Yakdessawa Junior School,Level 5
+50900700343,Paluwelgala Kanishta Vidyalaya,Level 5
+50900700344,Morakale Buddhist School,Level 5
+50900700345,Meegahawela Primary School,Level 5
+50900700346,Narawila Muslim Vidyalaya,Level 5
+50900700347,Maningala Muslim Vidyalaya,Level 5
+50900700348,Katuneriya St. Sebastian's Primary School,Level 5
+50900700400,Divisional Education Office - Wennappuwa,Level 4
+50900700401,Wennappuwa St. Joseph Vaz College,Level 5
+50900700402,"Holy Family Balika Primary School, Wennappuwa",Level 5
+50900700403,Wennappuwa Holy Family Balika Maha Vidyalaya,Level 5
+50900700404,"St. Francis X'Avier Kanishta Vidyalaya, Ulhitiyawa",Level 5
+50900700405,"St. Rita's College, Taldeka",Level 5
+50900700406,Dummaladeniya Buddhist Junior School,Level 5
+50900700407,"St. Martin De Pores Vidyalaya, Wennappuwa",Level 5
+50900700408,"Gonsalvez Maha Vidyalaya, Bolawaththa",Level 5
+50900700409,Boralessa Primary School,Level 5
+50900700410,Boralessa St. Annas Maha Vidyalaya,Level 5
+50900700411,"Kammala St. Odiliya Kanishta Vidyalaya, Waikkala",Level 5
+50900700412,Waikkala Goverment School,Level 5
+50900700413,Sindathriya Sindukumari Vidyalaya,Level 5
+50900700414,Thabarawila Junior School,Level 5
+50900700415,Godella Kanishta Vidyalaya,Level 5
+50900700416,Gonawila St. Joseph College,Level 5
+50900700417,Nainamadama Maha Vidyalaya,Level 5
+50900700418,"St. Mary's Primary School, Nainamadama",Level 5
+50900700419,Mirissankotuwa Nimala Mariya Primary School,Level 5
+50900700420,Katukenda Sri Sangabodhi Central College,Level 5
+50900700421,"Nimala Mariya Vidyalaya,Dummalakotuwa",Level 5
+50900700422,Etiyawala Kanishta Vidyalaya,Level 5
+50900700423,Jankurawela Vidyalaya,Level 5
+50900700424,Dikwela Primary School,Level 5
+50900700425,Wekada Maha Vidyalaya,Level 5
+50900700426,Buthgampola Goverment School,Level 5
+50900700427,Bujjampola Junior School,Level 5
+50900700428,Mellawa Kanishta Vidyalaya,Level 5
+50900700429,Mohottimulla Primary School,Level 5
+50900700430,Haldanduwana Roman Catholic School,Level 5
+50900700431,Haldaduwana Buddhist School,Level 5
+50900700432,"Anuruddha Madya Maha Vidyalaya, Lunuvila",Level 5
+50900700433,Lunuwila Buddhist Primary School,Level 5
+50900700434,Lunuwila Roman Catholic Primary School,Level 5
+50900700435,Bandirippuwa Kanishta Vidyalaya,Level 5
+50900700436,Lunuwila Buddhist Girls' College,Level 5
+50900700437,Kirimetiyana Sri Dharmarama Kanishta Vidyalaya,Level 5
+50900700438,Pothuwatawana Sri Jinarathana Maha Vidyalaya,Level 5
+50900700439,Dankotuwa Balika Maha Vidyalaya,Level 5
+50900700440,"St. Anne's Government School, Santhanapura",Level 5
+50900700441,"Sri Rathanajothi Primary School, Yogiyana",Level 5
+50900700442,"Mihindu Primary School, Katukenda",Level 5
+50900700443,"Sri Rahula Primary School, Lunuwila",Level 5
+50900700500,Teacher Center - Nattandiya,Level 4
+50900700600,Teacher Center - Madampe,Level 4
+50900800000,Zonal Education Office - Puttalam,Level 3
+50900800100,Divisional Education Office - Puttalam North,Level 4
+50900800101,"Abdeen Government Muslim Mix School, Thmpapanni",Level 5
+50900800102,Ansari Government Muslim Mixed School,Level 5
+50900800103,"Palavi Rishad Bathiudeen Maha Vidyalaya, Palavi",Level 5
+50900800104,Thabbowa Maha Vidyalaya,Level 5
+50900800105,Sirambiadiya Kanishta Vidyalaya,Level 5
+50900800106,"D.S. Senanayaka Kanishta Vidyalaya, Karuwalagaswewa",Level 5
+50900800107,Thewanuwara Prathamika Vidyalaya,Level 5
+50900800108,Thabbova Roman Catholic Vidyalaya,Level 5
+50900800109,Manaweriya Kanishta Vidyalaya,Level 5
+50900800110,"Vidyaraja Prathamika Vidyalaya, Karuwalagaswewa",Level 5
+50900800111,"Vidya Chakrawarthi Maha Vidyalaya, Ihala Puliyankulama",Level 5
+50900800112,Galawewa Maha Vidyalaya,Level 5
+50900800113,Kumbukwewa Attadassi Kanishta Vidyalaya,Level 5
+50900800114,"Saliya Model School, Saliyawewa",Level 5
+50900800115,Pahariya Wijayaraja Kanishta Vidyalaya,Level 5
+50900800116,Moonamalgaswewa Kanishta Vidyalaya,Level 5
+50900800117,Pahala Puliyankulama Kanishta Vidyalaya,Level 5
+50900800118,Weerapura Kanista Vidyalaya,Level 5
+50900800119,"Aluthgama Dutugamunu Vidyalaya, Ihala Puliyankulama",Level 5
+50900800120,Bandaranayakapura Maha Vidyalaya,Level 5
+50900800121,Nagamaduwa Kanishta Vidyalaya,Level 5
+50900800122,Wijayapura Kanishta Vidyalaya,Level 5
+50900800123,Karadipuwal Maha Vidyalaya,Level 5
+50900800124,Eluwankulama Sinhala Kanishta Vidyalaya,Level 5
+50900800125,Serakkuliya Kanishta Vidyalaya,Level 5
+50900800126,Mailankulama Junior School,Level 5
+50900800127,Eluvankulama Madya Maha Vidyalaya,Level 5
+50900800128,Karaitivu Madya Maha Vidyalaya,Level 5
+50900800129,Puttalam Andrews Central College,Level 5
+50900800130,Puttalam Ananda National School,Level 5
+50900800131,Puttalam Zahira College,Level 5
+50900800132,Puttalam Fathima Balika Maha Vidyalaya,Level 5
+50900800133,Puttalam Hindu Centrl College,Level 5
+50900800134,"Assenkudhoos Government Muslim Vidyalaya, Vettalai",Level 5
+50900800135,Thillaiyadi Madya Maha Vidyalaya,Level 5
+50900800136,Puttalama St. Mary's Tamil Maha Vidyalaya,Level 5
+50900800137,Wattakandal Madya Maha Vidyalaya,Level 5
+50900800138,Manaltivu Roman catholic Tamil Vidyalaya,Level 5
+50900800139,Semmandaluwa Primary School,Level 5
+50900800140,Morapathawa Government Vidyalaya,Level 5
+50900800141,Katupuliyankulama Primary School,Level 5
+50900800142,Neelabemma Primary School,Level 5
+50900800143,Rambawewa Primary School,Level 5
+50900800144,Rajavigama Kanishta Vidyalaya,Level 5
+50900800145,Muriyakulama Kanishta Vidyalaya,Level 5
+50900800146,"St. Andrew's Primary School, Puttalam",Level 5
+50900800147,Manalkundru Madya Maha Vidyalaya,Level 5
+50900800148,Veppamadu Madya Maha Vidyalaya,Level 5
+50900800149,Puttalam Zainab Muslim Girls School,Level 5
+50900800150,Puttalam Zahira Primary School,Level 5
+50900800151,"President's Science College, Puttalam",Level 5
+50900800152,Bandaranayakapura Primary College,Level 5
+50900800153,"Anagarika Dharmapala Prathamika Vidyalaya, Puttalam",Level 5
+50900800154,"Siddhartha Primary School, Saliyawewa",Level 5
+50900800155,"High Science College, Puttalam",Level 5
+50900800200,Divisional Education Office - Puttalam South,Level 4
+50900800201,"Vidyasagara Kanishta Vidyalaya, Kalladiya",Level 5
+50900800202,Madurankuliya Model School,Level 5
+50900800203,Amakuliya Government School,Level 5
+50900800204,Welasiya Kanishta Vidyalaya,Level 5
+50900800205,Palasola Kanishta Vidyalaya,Level 5
+50900800206,Viruthodai Madya Maha Vidyalaya,Level 5
+50900800207,Puluthivayal Government Muslim Vidyalaya,Level 5
+50900800208,Kanamoolai Muslim Kanishta Vidyalaya,Level 5
+50900800209,Kandathoduwawa Maha Vidyalaya,Level 5
+50900800210,Kadayamottai Government Sinhala School,Level 5
+50900800211,Koththantheew Government Muslim Mixed School,Level 5
+50900800212,Sameeragama Muslim Primary School,Level 5
+50900800213,Perakuwatana Sinhala Vidyalaya,Level 5
+50900800214,Kadayamottai Muslim Central College,Level 5
+50900800215,"Al Minhaj Muslim Maha Vidyalaya, Perukkuwattan",Level 5
+50900800216,Kandalaya Maha Vidyalaya,Level 5
+50900800217,Poththuwilluwa Kanishta Vidyalaya,Level 5
+50900800218,Palavi Sinhala Maha Vidyalaya,Level 5
+50900800219,Uttara Attavilluwa Kanishta Vidyalaya,Level 5
+50900800220,Madyama Attawilluwa Kanishta Vidyalaya,Level 5
+50900800221,Medhananda Government Vidyalaya,Level 5
+50900800222,Palavi Maha Vidyalaya,Level 5
+50900800223,"Omwr Farook Maha Vidyalaya, Pulichchakkulam",Level 5
+50900800224,Tharakuduvillu Madya Maha Vidyalaya,Level 5
+50900800225,Udappu Tamil Maha Vidyalaya,Level 5
+50900800226,Andimunai Tamil Maha Vidyalaya,Level 5
+50900800227,Kattaikadu Roman Catholic Tamil Vidyalaya,Level 5
+50900800228,Ottapanni Roman Catholic Tamil Vidyalaya,Level 5
+50900800229,Wilpotha Bandaranayaka Vidyalaya,Level 5
+50900800230,Mundalama Sinhala Maha Vidyalaya,Level 5
+50900800231,Nawadankulama Kanishta Vidyalaya,Level 5
+50900800232,Mangalaeliya Primary School,Level 5
+50900800233,Mundel Tamil Vidyalaya,Level 5
+50900800234,Marichchikattua Primary School,Level 5
+50900800235,Erukkalampiddy Maha Vidyalaya,Level 5
+50900800236,Kajuwatta Government Muslim Vidyalaya,Level 5
+50900800237,Srimapura Primary Muslim Vidyalaya,Level 5
+50900800238,Hidayath Nagar Muslim Madya Maha Vidyalaya,Level 5
+50900800239,Kattakaduwa Sinhala Vidyalaya,Level 5
+50900800240,Nallanthaluwa Muslim Primary School,Level 5
+50900800241,"Sri Krishna Primary School, Andimuna",Level 5
+50900800242,Mundal Sinhala Primary School,Level 5
+50900800243,"Rathna Pratheepa Primary School, Madurankuliya",Level 5
+50900800300,Divisional Education Office - Anamaduwa,Level 4
+50900800301,Anamaduwa Central College,Level 5
+50900800302,"Sri Rathanapala Maha Vidyalaya, Mahauswewa",Level 5
+50900800303,"Wimalarathna Kumaragama Kanishta Vidyalaya, Anamaduwa",Level 5
+50900800304,Paliyagama Shariputhra Maha Vidyalaya,Level 5
+50900800305,Kothalakemiyawa Kanishta Vidyalaya,Level 5
+50900800306,Wadigamangawa Kanishta Vidyalaya,Level 5
+50900800307,Periyakulama Kanishta Vidyalaya,Level 5
+50900800308,Uppalawatta Kanishta Vidyalaya,Level 5
+50900800309,Aththikulama Kanishta Vidyalaya,Level 5
+50900800310,Kedeththawa Prathamika Vidyalaya,Level 5
+50900800311,DiulwewaKanishta Vidyalaya,Level 5
+50900800312,Kottagama Sripali Kanishta Vidyalaya,Level 5
+50900800313,Thonigala New Model Kanishta Vidyalaya,Level 5
+50900800314,Waththegedara Prathamika Vidyalaya,Level 5
+50900800315,Munamalgawewa Siriperakum Kanishta Vidyalaya,Level 5
+50900800316,"Wayamba Janadipathi Vidyalaya, Dharmapalaya",Level 5
+50900800317,Nawagaththegama Maha Vidyalaya,Level 5
+50900800318,Thammennawetiya Prathamika Vidyalaya,Level 5
+50900800319,Koonkadawala Kanishta Vidyalaya,Level 5
+50900800320,Rambakanayagama Prathamika Vidyalaya,Level 5
+50900800321,Dangahawewa Kanishta Vidyalaya,Level 5
+50900800322,Ihala Kuruketiyawa Kanishta Vidyalaya,Level 5
+50900800323,Inginimitiya Maha Vidyalaya,Level 5
+50900800324,Ralapanawa Kanishta Vidyalaya,Level 5
+50900800325,Kelewewa Vijaya Maha Vidyalaya,Level 5
+50900800326,Welewewa Sumedha Kanishta Vidyalaya,Level 5
+50900800327,Maha Andarawewa Kanishta Vidyalaya,Level 5
+50900800328,Kottukachchiya Maha Vidyalaya,Level 5
+50900800329,Wadatta Kanishta Vidyalaya,Level 5
+50900800330,"U.B. Jayasooriya Maha Vidyalaya, Siyabalagashena",Level 5
+50900800331,Ethungoda Isipathana Kanishta Vidyalaya,Level 5
+50900800332,Mudalakkuliya Vijaya Maha Vidyalaya,Level 5
+50900800333,Sangattikulama Sinhala Kanishta Vidyalaya,Level 5
+50900800334,Sangattikulama Muslim Kanishta Vidyalaya,Level 5
+50900800335,Paramakanda Prathamika Vidyalaya,Level 5
+50900800336,Anamaduwa Kannangara Kanishta Vidyalaya,Level 5
+50900800337,Ihalauswewa Darmashoka Kanishta Vidyalaya,Level 5
+50900800338,"Swarnapali Primary School, Uriyawa",Level 5
+50900800339,Nawagaththegama Primary School,Level 5
+50900800340,"Parakrama Primary School, Mahauswewa",Level 5
+50900800341,Mamunagama Thakshila Primary College,Level 5
+50900800400,Divisional Education Office - Pallama,Level 4
+50900800401,Walpaluwa Kanishta Vidyalya,Level 5
+50900800402,Mahakumbukkadawala Kanishta Visyalaya,Level 5
+50900800403,Kiwulakele Maha Vidyalaya,Level 5
+50900800404,Dewalahandiya Jayawardhana Primary School,Level 5
+50900800405,Sembukuliya Junior School,Level 5
+50900800406,Sohonkalma Kanishta Vidyalaya,Level 5
+50900800407,Kivula Primary School,Level 5
+50900800408,Kurukkumaduwa Kanishta Vidyalaya,Level 5
+50900800409,Pallama Nandimithra Central College,Level 5
+50900800410,Wilpotha Anura Maha Vidyalaya,Level 5
+50900800411,Wendakaduwa Kanishta Vidyalaya,Level 5
+50900800412,Wathupola Maha Vidyalaya,Level 5
+50900800413,Serukele Kanishta Vidyalaya,Level 5
+50900800414,Ihala Mandalana Primary School,Level 5
+50900800415,Thamarakkulama Kanishta Vidyalaya,Level 5
+50900800416,Ihalakolaeliya Vidyalaya,Level 5
+50900800417,Ihala Thammana Kanishta Vidyalaya,Level 5
+50900800418,Katupotha Kanishta Vidyalaya,Level 5
+50900800419,Angunawila Kanishta Vidyalaya,Level 5
+50900800420,Baranankattuwa Kanishta Vidyalaya,Level 5
+50900800421,Karungalicholai Tamil Vidyalaya,Level 5
+50900800422,Andigama Madya Maha Vidyalaya,Level 5
+50900800423,Mathwakkulam Madya Maha Vidyalaya,Level 5
+50900800424,Lihinkiri Kanishta Vidyalaya,Level 5
+50900800425,Punavittiya Kanishta Vidyalaya,Level 5
+50900800426,Kammandaluwa Bilingual Kanishta Vidyalaya,Level 5
+50900800427,Dewelahandiya Kannangara Primary School,Level 5
+50900800428,Wilpotha Anura Prathmika Widuhala,Level 5
+50900800429,Andigama Primary School,Level 5
+50900800430,"S. D. R. Jayarathna Primary School, Pallama",Level 5
+50900800500,Divisional Education Office - Kalpitiya,Level 4
+50900800501,"Rizwan Government Muslim Mixed School, Karambe-B",Level 5
+50900800502,"Hasban Government Muslim Mixed School, Thalavila",Level 5
+50900800503,"Iyoob Government Muslim Mixed School, Al-Manaar",Level 5
+50900800504,"Nirmala Matha Sinhala Maha Vidyalaya, Kalpitiya",Level 5
+50900800505,Kurinchippittiya Roman Catholic Sinhala Vidyalaya,Level 5
+50900800506,Kandakkuliya Government Sinhala Vidyalaya,Level 5
+50900800507,Kandalkuda Muslim Kanishta Vidyalaya,Level 5
+50900800508,Mudalaippali Maha Vidyalaya,Level 5
+50900800509,Musalpittiya Muslim Kanista Vidyalaya,Level 5
+50900800510,Pallivasalthurai Madya Maha Vidyalaya,Level 5
+50900800511,Kurinchipiti Madya Maha Vidyalaya,Level 5
+50900800512,Kandalkuli Maha Vidyalaya,Level 5
+50900800513,Puttalam Al Aqsa Natioanl School,Level 5
+50900800514,Kalpitty Roman Catholic Tamil Vidyalaya,Level 5
+50900800515,Thillaiyoor Muslim Primary School,Level 5
+50900800516,Muhathuwaram Government Muslim Vidyalaya,Level 5
+50900800517,Thalavila St. Annes Maha Vidyalaya,Level 5
+50900800518,Kappaladi Kanishta Vidyalaya,Level 5
+50900800519,Thihali Madya Maha Vidyalaya,Level 5
+50900800520,Etalai Roman Catholic Tamil Vidyalaya,Level 5
+50900800521,Alankuda Madya Maha Vidyalaya,Level 5
+50900800522,Ilanthaiadiya Sinhala Vidyalaya,Level 5
+50900800523,Norochcholai Muslim Maha Vidyalaya,Level 5
+50900800524,Panaiyadi Roman Catholic Tamil Vidyalaya,Level 5
+50900800525,Narakkali Roman Catholic Tamil Vidyalaya,Level 5
+50900800526,Mampuriya Roman Catholic Sinhala Tamil Maha Vidyalaya,Level 5
+50900800527,Navatkadu Roman Catholic Tamil Vidyalaya,Level 5
+50900800528,Thethapolai Roman Catholic Tamil Vidyalaya,Level 5
+50900800529,Nayakkarachennayi Tamil Kanishta Vidyalaya,Level 5
+50900800530,Daluwa St. Anthony's Maha Vidyalaya,Level 5
+50900800531,Palakudawa St. Peeter's Kanishta Vidyalaya,Level 5
+50900800532,Poolachenai Muslim Maha Vidyalaya,Level 5
+50900800533,Mohoththuwarama Sinhala Vidyalaya,Level 5
+50900800534,Kandakuliya Mune Sinhala Vidyalaya,Level 5
+50900800535,Ulukkappulam Muslim Maha Vidyalaya,Level 5
+50900800536,Koiyawadi Muslim Maha Vidyalaya,Level 5
+50900800537,Mampuriya Roman Catholic Sinhala Tamil Prathamika Vidyalaya,Level 5
+50900800538,Kal Periya Santhi Grama Bilingual Primary School,Level 5
+50900800539,Uchchamunai Roman Catholic Primary Vidyalaya,Level 5
+50900800540,"Al Karam Muslim Primary School, Pallivasalthurai",Level 5
+50900800541,"Al Madeena Muslim Primary School, Kurinja",Level 5
+50900800542,"Sindathrimatha Primary School, Kalpititya",Level 5
+50900800543,"Al Hira Primary School, Kalpitiya",Level 5
+50900800544,"Arogyamatha Prathamika Vidyalaya, Kalpitiya",Level 5
+60000000000,"Provincial Ministry of Road, Transport, Housing & Construction & Industrial & Rural Development - North Western Provincial Council",Level 1
+61000000000,Department of Provincial Rural Development & Training Centre Atamune - North Western Provincial Council,Level 2
+61100000000,Department of Housing & Construction - North Western Provincial Council,Level 2
+61200000000,Department of Road Development  - North Western Provincial Council,Level 2
+61200100000,Executive Engineers Office kurunegala,Level 3
+61200200000,Executive Engineers Office Kuliyapitiya,Level 3
+61200300000,Executive Engineers Office Maho- North,Level 3
+61200400000,Executive Engineers Office Wariyapola,Level 3
+61200500000,Executive Engineers Office Anamaduwa,Level 3
+61200600000,Executive Engineers Office Chilaw,Level 3
+61300000000,Department of Industrial Development - North Western Provincial Council,Level 2
+61300100000,Ana/Thalakolawewa Janasalu Sales Center,Level 3
+61300200000,Pannala Janasalu Center,Level 3
+61300300000,Ras/ Thalakolawewa Janasalu Center,Level 3
+61300400000,Kahawaththeala Janasalu Center,Level 3
+61300500000,Polgolla Janasalu Center,Level 3
+61300600000,Kelimune Janasalu Center,Level 3
+61300700000,Panduwasnuwara Janasalu Sales Center,Level 3
+61300800000,Narawila Janasalu Center,Level 3
+61300900000,Madampe Janasalu Center,Level 3
+61301000000,Hedipannala Janasalu Center,Level 3
+61301100000,Nagollagama Janasalu Center,Level 3
+61301200000,Manakkulama Janasalu Center,Level 3
+61301300000,Paragaharuppa Janasalu Center,Level 3
+61301400000,Haldaduwana Janasalu /Sales Center,Level 3
+61301500000,Kahatawilawaththa Janasalu Center,Level 3
+61301600000,Thambagalwaththa Janasalu Center,Level 3
+61301700000,Nedalagamuwa Janasalu Center,Level 3
+61301800000,Kuddetiyawa Janasalu Center,Level 3
+61301900000,Damba/Galgamuwa Janasalu Center,Level 3
+61302000000,Welpalla Janasalu Center,Level 3
+61302100000,Wari/Magulagama Janasalu Center,Level 3
+61302200000,Tharana Janasalu Center,Level 3
+61302300000,Horombawa Janasalu / Sales Center,Level 3
+61302400000,Wilpatha Janasalu Center,Level 3
+61302500000,Pitadeniya Janasalu Center,Level 3
+61302600000,Kiribamuna Janasalu Center,Level 3
+61302700000,Devagiripura Janasalu Center,Level 3
+61302800000,Wathupola Janasalu Center,Level 3
+61302900000,Andigamawaththa Janasalu Center,Level 3
+61303000000,Karawitigara Janasalu Center,Level 3
+61303100000,Polpithigama Janasalu/Sales Center,Level 3
+61303200000,Makulwewa Janasalu Center,Level 3
+61303300000,Warakawehera Janasalu/Sales Center,Level 3
+61303400000,Boyagane Textile Premises,Level 3
+61303500000,Mapegamuwa Janasalu Center,Level 3
+61303600000,Weralugama Janasalu / Sales Center,Level 3
+61303700000,Paluwelgala Janasalu Center,Level 3
+61303800000,Pandu/Magulagama Janasalu Center,Level 3
+61303900000,Galgammulla Janasalu Center,Level 3
+61304000000,Kalugamuwa Janasalu Center,Level 3
+61304100000,Weerakodiyana Janasalu Center,Level 3
+61304200000,Bandarakoswaththa Janasalu Center,Level 3
+61304300000,Paragahadeniya Janasalu Center,Level 3
+61304400000,Hamangalla Janasalu Center,Level 3
+61304500000,Watareka Janasalu Center,Level 3
+61304600000,Karandawa Janasalu Center,Level 3
+61304700000,Ibbagamuwa Janasalu Center,Level 3
+61304800000,Go/Koswaththa Janasalu Center,Level 3
+61304900000,Mummana Janasalu Center,Level 3
+61305000000,Gonawa Janasalu Center,Level 3
+61305100000,Halmillakotuwa Janasalu Center,Level 3
+61305200000,Mellankulama Janasalu / Sales Center,Level 3
+61305300000,Bamunakotuwa Janasalu Center,Level 3
+61305400000,Pubbowa Janasalu Center,Level 3
+61305500000,Nithalawa Koswaththa Janasalu Center,Level 3
+61305600000,Wilaththawa Janasalu Center,Level 3
+61305700000,Kudagalgamuwa Janasalu Center,Level 3
+61305800000,Bibiladeniya Janasalu Center,Level 3
+61305900000,Kudabingiriya Janasalu Center,Level 3
+61306000000,Godawela Janasalu Center,Level 3
+61306100000,Nagollagoda Janasalu Center,Level 3
+61306200000,Kithagama Janasalu Center,Level 3
+61306300000,Yatihena Janasalu Center,Level 3
+61306400000,Imbulgodayagama Janasalu Center,Level 3
+61306500000,Madahapola Janasalu Center,Level 3
+61306600000,Hunuwila Janasalu Center,Level 3
+61306700000,Padiwela Janasalu Center,Level 3
+61306800000,Metibokka Janasalu / Sales Center,Level 3
+61306900000,Makandura Janasalu Center,Level 3
+61307000000,Walakumbura Janasalu / Sales Center,Level 3
+61307100000,Madelpola Janasalu Center,Level 3
+61307200000,Mandapola Janasalu Center,Level 3
+61307300000,Galmuruwa Janasalu Center,Level 3
+61307400000,Diwulwewa Janasalu Center,Level 3
+61307500000,Rathnadiwulwewa Textile Village,Level 3
+61307600000,Bangadeniya Textile Village,Level 3
+61307700000,Kattambuwawa Textile Village,Level 3
+61307800000,Paligama Textile Village,Level 3
+61307900000,Thimbiriyagedara Textile Village,Level 3
+61308000000,North Central Janasalu Sales center,Level 3
+61308100000,Naththandiya Sales center,Level 3
+61308200000,Daladagama Sales center,Level 3
+61308300000,Nikaweratiya Sales center,Level 3
+61308400000,Galgamuwa Sales center,Level 3
+61308500000,Pambala Sales center,Level 3
+61308600000,Inigodawela Sales center,Level 3
+61308700000,Wennappuwa Sales center,Level 3
+61308800000,Danwella Clay Training/Sales Center,Level 3
+61308900000,Udaragama Clay Training / Sales Center,Level 3
+61309000000,Walakumbura Clay Training Center,Level 3
+61309100000,Kirimetiyana Clay Training Center,Level 3
+61309200000,Bibiladeniya Coir Training Center,Level 3
+61309300000,Paragammana Coir Training Center,Level 3
+61309400000,Mellawalana Coir Training Center,Level 3
+61309500000,Yakkannehera Coir Training Center,Level 3
+61309600000,Rideegama Training Center,Level 3
+61309700000,Narammala Coir Training Center,Level 3
+61309800000,Rathmale Coir Training Center,Level 3
+61309900000,Moragolla Coir Training Center,Level 3
+61310000000,Kumbukgete Coir Training Center,Level 3
+61310100000,Bujjomuwa Training Center,Level 3
+61310200000,Saliyawewa Coir Training Center,Level 3
+61310300000,Konkandawala Coir Training Center,Level 3
+61310400000,Malkaduwawa Higher Training Center,Level 3
+61310500000,Chillaw Carpentry Training Center,Level 3
+61310600000,Bongamuwa Carpentry Training Center,Level 3
+61310700000,Morakele Carpentry Training Center,Level 3
+61310800000,Yapahuwa Carpentry Training Center,Level 3
+61310900000,Dandagamuwa Training Center,Level 3
+61311000000,Bandarakoswaththa Luhu Engineer Center,Level 3
+61311100000,Gahalagaswala Luhu Engineer Center,Level 3
+70000000000,"Provincial Ministry of Co-operative Development & Trade, Land, Electricity & Energy, Sports and Youth Affairs, Culture & Arts Affairs, and Information Technology - North Western Provincial Council",Level 1
+71400000000,Youth Affairs & Sport Unit - North Western Provincial Council,Level 2
+71500000000,Cultural Affairs Unit - North Western Provincial Council,Level 2
+71600000000,Co-Operative Employee's Commission - North Western Provincial Council,Level 2
+71700000000,Department of Provincial Land Commissioner - North Western Provincial Council,Level 2
+71800000000,Department of Provincial Co-operative Development - North Western Provincial Council,Level 2
+80000000000,"Provincial Ministry of Agriculture, Lands, Irrigation, Fisheries, Animal Product & Health & Agrarian Development - North Western Provincial Council",Level 1
+81900000000,Department of Agriculture - North Western Provincial Council,Level 2
+81900100000,Deputy Director office of Agriculture Kurunegala,Level 3
+81900200000,Zonal Director office of Agriculture Kurunegala,Level 3
+81900300000,Zonal Director office of Agriculture Kuliyapitiya,Level 3
+81900400000,Zonal Director office of Agriculture Dambadeniya,Level 3
+81900500000,Zonal Director office of Agriculture Ibbagamuwa,Level 3
+81900600000,Zonal Director office of Agriculture Mahawa,Level 3
+81900700000,Zonal Director office of Agriculture Wariyapola,Level 3
+81900800000,Zonal Director office of Agriculture Galgamuwa,Level 3
+81900900000,Farm Wariyapola,Level 3
+81901000000,Farm Galgamuwa,Level 3
+81901100000,Seed Unit Wariyapola,Level 3
+81901200000,Seed Lab -Wariyapola (Quality),Level 3
+81901300000,Training Centre Wariyapola,Level 3
+81901400000,Soil Lab Wariyapola,Level 3
+81901500000,Deputy Director office of Agriculture Puttalam,Level 3
+81901600000,Zonal Director office of Agriculture Puttalam,Level 3
+81901700000,Zonal Director office of Agriculture Madampe,Level 3
+81901800000,Zonal Director office of Agriculture Anamaduwa,Level 3
+81901900000,Provincial Department of Irrigation - North Western Provincial Council,Level 3
+81902000000,Regional Irrigation Engineering office - Kurunegala,Level 3
+81902100000,Regional Irrigation Engineering office - Puttalama,Level 3
+82000000000,Department of Animal Production & Health - North Western Provincial Council,Level 2
+82000100000,Office of the Deputy Director of Animal Production & Health - Kurunegala,Level 3
+82000200000,Veterinary Office - Kurunegala,Level 3
+82000300000,Veterinary Office - Maspotha,Level 3
+82000400000,Veterinary Office - Polgahawela,Level 3
+82000500000,Veterinary Office - Alawwa,Level 3
+82000600000,Veterinary Office - Mawathagama,Level 3
+82000700000,Veterinary Office - Ibbagamuwa,Level 3
+82000800000,Veterinary Office - Rideegama,Level 3
+82000900000,Veterinary Office - Kuliyapitiya,Level 3
+82001000000,Veterinary Office - Horombawa,Level 3
+82001100000,VeterinaryOffice - Katupotha,Level 3
+82001200000,Veterinary Office - Bamunakotuwa,Level 3
+82001300000,Veterinary Office - Pannala,Level 3
+82001400000,Veterinary Office - Dummalasooriya,Level 3
+82001500000,Veterinary Office - Narammala,Level 3
+82001600000,Veterinary Office - Weerambugedara,Level 3
+82001700000,Veterinary Office - Bingiriya,Level 3
+82001800000,Veterinary Office - Mallawapitiya,Level 3
+82001900000,Office of the Deputy Director of Animal Production & Health - Maho,Level 3
+82002000000,Veterinary Office - Ganewatta,Level 3
+82002100000,Veterinary Office - Wariyapola,Level 3
+82002200000,Veterinary Office - Panduwasnuwara,Level 3
+82002300000,Veterinary Office - Kobeigane,Level 3
+82002400000,Veterinary Office - Nikaweratiya,Level 3
+82002500000,Veterinary Office - Kotawehera,Level 3
+82002600000,Veterinary Office - Rasnayakapura,Level 3
+82002700000,Veterinary Office - Maho,Level 3
+82002800000,Veterinary Office - Ambanpola,Level 3
+82002900000,Veterinary Office - Galgamuwa,Level 3
+82003000000,Veterinary Office - Ehetuwewa,Level 3
+82003100000,Veterinary Office - Giribawa,Level 3
+82003200000,Veterinary Office - Polpithigama,Level 3
+82003300000,Office of the Deputy Director of Animal Production & Health - Puttalam,Level 3
+82003400000,Veterinary Office - Chilaw,Level 3
+82003500000,Veterinary Office - Madampe,Level 3
+82003600000,Veterinary Office - Marawila,Level 3
+82003700000,Veterinary Office - Mahawewa,Level 3
+82003800000,Veterinary Office - Dankotuwa,Level 3
+82003900000,Veterinary Office - Wennappuwa,Level 3
+82004000000,Veterinary Office - Puttalam,Level 3
+82004100000,Veterinary Office - Kalpitiya,Level 3
+82004200000,Veterinary Office - Wanathawilluwa,Level 3
+82004300000,Veterinary Office - Serukele,Level 3
+82004400000,Veterinary Office - Arachchikattuwa,Level 3
+82004500000,Veterinary Office - Mandel,Level 3
+82004600000,Veterinary Office - Mahakumbukkadawala,Level 3
+82004700000,Veterinary Office - Karuwalagaswewa,Level 3
+82004800000,Veterinary Office - Anamaduwa,Level 3
+82004900000,Veterinary Office - Nawagaththegama,Level 3
+82005000000,Integrated Farm Development & Training Center,Level 3
+90000000000,"Provincial Ministry of Health, Indigenous Medicine, Social Welfare, Probation & Child care, Women’s Affairs & council affairs - North Western Provincial Council",Level 1
+92100000000,Department of Social Service - North Western Provincial Council,Level 2
+92200000000,Department of Provincial Probation and Child Care Services - North Western Provincial Council,Level 2
+92200100000,Probation office - Kurunegala,Level 3
+92200200000,Probation office - Wariyapola,Level 3
+92200300000,Probation office - Kuliyapitiya,Level 3
+92200400000,Probation office - Maho,Level 3
+92200500000,Probation office - Galgamuwa,Level 3
+92200600000,Probation office - Nikaweratiya,Level 3
+92200700000,Probation Office - Rambadagalla,Level 3
+92200800000,Probation Office - Polgahawela,Level 3
+92200900000,Probation Office - Hettipola,Level 3
+92201000000,Amila Sewana Children's Home,Level 3
+92201100000,Girls Remand Home - Meegahakotuwa,Level 3
+92201200000,Probation office - Puttalam,Level 3
+92201300000,Probation office - Chilaw,Level 3
+92201400000,Probation office - Marawila,Level 3
+92201500000,Probation office - Anamaduwa,Level 3
+92300000000,Department of Ayuruveda - North Western Provincial Council,Level 2
+92300100000,Deputy Commisonner office Department of Ayuruveda - Madampe,Level 3
+92300200000,D.B. Welagedara Provincial Ayuruvedic Hospital,Level 3
+92300300000,Ayuruvedic Hospital - Narammala,Level 3
+92300400000,Ayuruvedic Hospital - Dodamgaslanda,Level 3
+92300500000,Ayuruvedic Hospital - Muruthenge,Level 3
+92300600000,Ayuruvedic Hospital - Nadalagamuwa,Level 3
+92300700000,Ayuruvedic Hospital - Wariyapola,Level 3
+92300800000,Ayuruvedic Hospital - Ambanpola,Level 3
+92300900000,Ayuruvedic Central Dispensary - Wellawa,Level 3
+92301000000,Ayuruvedic Central Dispensary - Nikaweratiya,Level 3
+92301100000,Ayuruvedic Central Dispensary - Kobeigane,Level 3
+92301200000,Ayuruvedic Central Dispensary- Balalla,Level 3
+92301300000,Ayuruvedic Central Dispensary- Horombawa,Level 3
+92301400000,Ayuruvedic Central Dispensary - Kumbukgete,Level 3
+92301500000,Ayuruvedic Central Dispensary - Mahapitiya,Level 3
+92301600000,Ayuruvedic Central Dispensary - Rajanganaya,Level 3
+92301700000,Ayuruvedic Central Dispensary - Meegalewa,Level 3
+92301800000,Ayuruvedic Central Dispensary - Kirindawa,Level 3
+92301900000,Ayuruvedic Central Dispensary - Rambadagalla,Level 3
+92302000000,Ayuruvedic Central Dispensary - Tammebuwa,Level 3
+92302100000,Ayuruvedic Central Dispensary - Maharachchimulla,Level 3
+92302200000,Ayuruvedic Central Dispensary - Muthugala,Level 3
+92302300000,Ayuruvedic Central Dispensary - Keelawalana,Level 3
+92302400000,Ayuruvedic Central Dispensary- Ingaradaula,Level 3
+92302500000,Ayuruvedic Central Dispensary - Welpalla,Level 3
+92302600000,Ayuruvedic Central Dispensary - Galgamuwa,Level 3
+92302700000,Ayuruvedic Central Dispensary - Meethanwala,Level 3
+92302800000,Ayuruvedic Central Dispensary - Walpitagama,Level 3
+92302900000,Ayuruvedic Central Dispensary - Kuliyapitiya,Level 3
+92303000000,Ayuruvedic Central Dispensary - Kosgolla,Level 3
+92303100000,Ayuruvedic Central Dispensary - Boyagoda,Level 3
+92303200000,Ayuruvedic Central Dispensary- Thambarombuwa,Level 3
+92303300000,Ayuruvedic Central Dispensary - Madahapola,Level 3
+92303400000,Ayuruvedic Central Dispensary - Bingiriya,Level 3
+92303500000,Ayuruvedic Central Dispensary - yagamwela,Level 3
+92303600000,Ayuruvedic Central Dispensary -wadurassegama,Level 3
+92303700000,Ayuruvedic Central Dispensary- Kadayamotta,Level 3
+92303800000,Community Helth Promotive Center Meegahakotuwa,Level 3
+92303900000,Ayuruvedic Hospital - Kirimetiyana,Level 3
+92304000000,Ayuruvedic Hospital - Puttalam,Level 3
+92304100000,Ayuruvedic Hospital - Madampe,Level 3
+92304200000,Ayuruvedic Central Dispensary - Maiyawa,Level 3
+92304300000,Ayuruvedic Central Dispensary - Anamaduwa,Level 3
+92304400000,Ayuruvedic Central Dispensary - Mundalama,Level 3
+92304500000,Ayuruvedic Central Dispensary - Wanathawilluwa,Level 3
+92304600000,Ayuruvedic Central Dispensary - Naththandiya,Level 3
+92304700000,Ayuruvedic Central Dispensary - Palliwasathuri,Level 3
+92400000000,Office of the Provincial Director of Health Services - North Western Provincial Council,Level 2
+92400100000,Office of the Regional Director of Health Services - Kurunegala,Level 3
+92400100100,Anti malaria Campaign - Kurunegala,Level 4
+92400100200,Anti malaria Campaign - Maho,Level 4
+92400100300,Base Hospital (A)- Nikaweratiya,Level 4
+92400100400,Base Hospital (B)- Dambadeniya,Level 4
+92400100500,Base Hospital (B)- Galgamuwa,Level 4
+92400100600,Base Hospital (B)- Polpitigama,Level 4
+92400100700,Chest Clinic - Kurunegala,Level 4
+92400100800,Divisional Hospital Type A - Alawwa,Level 4
+92400100900,Divisional Hospital Type A - Gokarella,Level 4
+92400101000,Divisional Hospital Type A - Hiripitiya,Level 4
+92400101100,Divisional Hospital Type A - Maho,Level 4
+92400101200,Divisional Hospital type A - Mawathagama,Level 4
+92400101300,Divisional Hospital type A - Ridigama,Level 4
+92400101400,Divisional Hospital type A - Sandalankawa,Level 4
+92400101500,Divisional Hospital type A - Wariyapola,Level 4
+92400101600,Divisional Hospital type B - Ambanpola,Level 4
+92400101700,Divisional Hospital type B - Bingiriya,Level 4
+92400101800,Divisional Hospital type B - Hettipola,Level 4
+92400101900,Divisional Hospital type B - Kandanegedara,Level 4
+92400102000,Divisional Hospital type B - Katupotha,Level 4
+92400102100,Divisional Hospital type B - Kobeigane,Level 4
+92400102200,Divisional Hospital type B - Meegalewa,Level 4
+92400102300,Divisional Hospital type B - Narammala,Level 4
+92400102400,Divisional Hospital type B - Nikawewa,Level 4
+92400102500,Divisional Hospital type B - Pahalagiribawa,Level 4
+92400102600,Divisional Hospital type B - Polgahawela,Level 4
+92400102700,Divisional Hospital type B - Thlampitiya,Level 4
+92400102800,Divisional Hospital type C - Atharagalla,Level 4
+92400102900,Divisional Hospital type C - Delwita,Level 4
+92400103000,Divisional Hospital type C - Dunakadeniya,Level 4
+92400103100,Divisional Hospital type C - Ehetuwewa,Level 4
+92400103200,Divisional Hospital type C - Gonawa (Weerambugedara),Level 4
+92400103300,Divisional Hospital type C - Gonigoda,Level 4
+92400103400,Divisional Hospital type C - Indulgodakanda,Level 4
+92400103500,Divisional Hospital type C - Karambe,Level 4
+92400103600,Divisional Hospital type C - Koshena,Level 4
+92400103700,Divisional Hospital type C - Kotawehera,Level 4
+92400103800,Divisional Hospital type C - Mahamookalanyaya,Level 4
+92400103900,Divisional Hospital type C - Mahnanneriya,Level 4
+92400104000,Divisional Hospital type C - Muwanhela,Level 4
+92400104100,Divisional Hospital type C - Nagollagama,Level 4
+92400104200,Divisional Hospital type C - Nawathalwaththa,Level 4
+92400104300,Divisional Hospital type C - Rajanganaya,Level 4
+92400104400,Divisional Hospital type C - Weerapokuna,Level 4
+92400104500,Divisional Hospital type C - Wellawa,Level 4
+92400104600,Divisional Hospital type C -Mahagirilla,Level 4
+92400104700,"Mental Health Rehabilitation Unit - Arunalu, Mhru Unit (Uhmeeya)",Level 4
+92400104800,Filariasis Control Unit - Kurunegala,Level 4
+92400104900,MOH - Alawwa,Level 4
+92400105000,MOH - Ambanpola,Level 4
+92400105100,MOH - Bamunakotuwa,Level 4
+92400105200,MOH - Bingiriya,Level 4
+92400105300,MOH - Galgamuwa,Level 4
+92400105400,MOH - Ganewaththa,Level 4
+92400105500,MOH - Giribawa,Level 4
+92400105600,MOH - ibbagamuwa,Level 4
+92400105700,MOH - Katupotha (Kuliyapitiya East),Level 4
+92400105800,MOH - Kobeigane,Level 4
+92400105900,MOH - Kotawehera,Level 4
+92400106000,MOH - Kuliyapitiya,Level 4
+92400106100,MOH - Kurunegala,Level 4
+92400106200,MOH - Maho,Level 4
+92400106300,MOH - Mawathagama,Level 4
+92400106400,MOH - Mallawapitiya,Level 4
+92400106500,MOH - Maspotha,Level 4
+92400106600,MOH - Narammala,Level 4
+92400106700,MOH - Nikaweratiya,Level 4
+92400106800,MOH - Panduwasnuwara East,Level 4
+92400106900,MOH - Panduwasnuwara West,Level 4
+92400107000,MOH - Pannala,Level 4
+92400107100,MOH - Polpithigama,Level 4
+92400107200,MOH - Rasnayakapura,Level 4
+92400107300,MOH - Rideegama,Level 4
+92400107400,MOH - Polgahawela,Level 4
+92400107500,MOH - Udubaddawa,Level 4
+92400107600,MOH - Wariyapola,Level 4
+92400107700,MOH - Weerambugedara,Level 4
+92400107800,Primary Medical Care Unit - Balalla,Level 4
+92400107900,Primary Medical Care Unit - Bandarakoswaththa,Level 4
+92400108000,Primary Medical Care Unit - Bathalagoda,Level 4
+92400108100,Primary Medical Care Unit - Bihalpola,Level 4
+92400108200,Primary Medical Care Unit - Bopitiya,Level 4
+92400108300,Primary Medical Care Unit - Boraluwewa,Level 4
+92400108400,Primary Medical Care Unit - Boyawalana,Level 4
+92400108500,Primary Medical Care Unit - Buluwala,Level 4
+92400108600,Primary Medical Care Unit - Digampitiya,Level 4
+92400108700,Primary Medical Care Unit - Divurumpola,Level 4
+92400108800,Primary Medical Care Unit - Divullegoda,Level 4
+92400108900,Primary Medical Care Unit - Dodamgaslanda,Level 4
+92400109000,Primary Medical Care Unit - Dothella,Level 4
+92400109100,Primary Medical Care Unit - Elabadagama,Level 4
+92400109200,Primary Medical Care Unit - Ethanawaththa,Level 4
+92400109300,Primary Medical Care Unit - Gonagama,Level 4
+92400109400,Primary Medical Care Unit - Hiruwalpola,Level 4
+92400109500,Primary Medical Care Unit - Horathepola,Level 4
+92400109600,Primary Medical Care Unit - Inguruwaththa,Level 4
+92400109700,Primary Medical Care Unit - Kadigawa,Level 4
+92400109800,Primary Medical Care Unit - Kahapathwala,Level 4
+92400109900,Primary Medical Care Unit - Kekunagolla,Level 4
+92400110000,Primary Medical Care Unit - Kelegama,Level 4
+92400110100,Primary Medical Care Unit - Kalugalla,Level 4
+92400110200,Primary Medical Care Unit - Kattimahana,Level 4
+92400110300,Primary Medical Care Unit - Kimbulwanaoya,Level 4
+92400110400,Primary Medical Care Unit - Kolambagama,Level 4
+92400110500,Primary Medical Care Unit - Kosdeniya,Level 4
+92400110600,Primary Medical Care Unit - Kumbukwewa,Level 4
+92400110700,Primary Medical Care Unit - Kudagalgamuwa,Level 4
+92400110800,Primary Medical Care Unit - Madahapola,Level 4
+92400110900,Primary Medical Care Unit - Makulpotha,Level 4
+92400111000,Primary Medical Care Unit - Melsiripura,Level 4
+92400111100,Primary Medical Care Unit - Maspotha,Level 4
+92400111200,Primary Medical Care Unit - Minuwangete,Level 4
+92400111300,Primary Medical Care Unit - Mohoththuwagoda,Level 4
+92400111400,Primary Medical Care Unit - Munamaldeniya,Level 4
+92400111500,Primary Medical Care Unit - Narangoda,Level 4
+92400111600,Primary Medical Care Unit - Netiya,Level 4
+92400111700,Primary Medical Care Unit - Pothuhera,Level 4
+92400111800,Primary Medical Care Unit - Pothuwila,Level 4
+92400111900,Primary Medical Care Unit - Rasnayakapura,Level 4
+92400112000,Primary Medical Care Unit - Thalakolawewa,Level 4
+92400112100,Primary Medical Care Unit - Thalawa,Level 4
+92400112200,Primary Medical Care Unit - Tharana Udawela,Level 4
+92400112300,Primary Medical Care Unit - Thisogama,Level 4
+92400112400,Primary Medical Care Unit - Udubaddawa,Level 4
+92400112500,Primary Medical Care Unit - Udumulla,Level 4
+92400112600,Primary Medical Care Unit - Uhumeeya,Level 4
+92400112700,Primary Medical Care Unit - Usgala Siyambalangamuwa,Level 4
+92400112800,Primary Medical Care Unit - Wadakada,Level 4
+92400112900,Primary Medical Care Unit - welikare,Level 4
+92400113000,Primary Medical Care Unit - Weuda,Level 4
+92400113100,Primary Medical Care Unit - Wewagama,Level 4
+92400113200,Rabies Control Unit - Kurunegala,Level 4
+92400113300,Regional Medical Supplies Division - Kurunegala,Level 4
+92400113400,Sexually Transmitted Diseases Clinic - Kurunegala,Level 4
+92400113500,Sexually Transmitted Diseases Clinic - Kuliyapitiya,Level 4
+92400200000,Office of Regional Director of Health Services - Puttalam,Level 3
+92400200100,ANTI FILARIA UNIT - Madampe,Level 4
+92400200200,ANTI RABEIS UNIT - Madampe,Level 4
+92400200300,Base Hospital -Type A -Puttalam,Level 4
+92400200400,Base Hospital -Type B - Marawila,Level 4
+92400200500,Base Hospital -Type B - Anamaduwa,Level 4
+92400200600,Base Hospital -Type B - Kalpitiya,Level 4
+92400200700,Divisional Hospital -Type A -Dankotuwa,Level 4
+92400200800,Divisional Hospital -Type B - Mundal,Level 4
+92400200900,Divisional Hospital -Type B - Udappuwa,Level 4
+92400201000,Divisional Hospital -Type B - Lunuwila,Level 4
+92400201100,Divisional Hospital -Type C - Galmuruwa,Level 4
+92400201200,Divisional Hospital -Type C - Madampe,Level 4
+92400201300,Divisional Hospital -Type C - Anawilundawa,Level 4
+92400201400,Divisional Hospital -Type C - Kottukachchiya,Level 4
+92400201500,Divisional Hospital -Type C - Nawagaththegama,Level 4
+92400201600,Divisional Hospital -Type C - Thabbowa,Level 4
+92400201700,Primary Medical Care Unit - Kottanthivu,Level 4
+92400201800,Primary Medical Care Unit -Mahakubukkadawala,Level 4
+92400201900,Primary Medical Care Unit - Mampuri,Level 4
+92400202000,Primary Medical Care Unit - Wanathawilluwa,Level 4
+92400202100,Primary Medical Care Unit - Aluthgama,Level 4
+92400202200,Primary Medical Care Unit - Pallama,Level 4
+92400202300,"Primary Medical Care Unit - Mellawa, Lihiriyagama",Level 4
+92400202400,Primary Medical Care Unit - Wennappuwa,Level 4
+92400202500,Primary Medical Care Unit - Thalawila,Level 4
+92400202600,Primary Medical Care Unit - Nainamadama,Level 4
+92400202700,Primary Medical Care Unit - Mudalakkuliya,Level 4
+92400202800,Primary Medical Care Unit - Koswaththa,Level 4
+92400202900,"Primary Medical Care Unit - Thabagalla, Medagama",Level 4
+92400203000,Primary Medical Care Unit - Thoduwawa,Level 4
+92400203100,"Primary Medical Care Unit - Karathivu, Pomparippu",Level 4
+92400203200,Primary Medical Care Unit - Madurankuliya,Level 4
+92400203300,Primary Medical Care Unit - Pothuwatawana,Level 4
+92400203400,Primary Medical Care Unit - Kokkawila,Level 4
+92400203500,Primary Medical Care Unit - Nattandiya,Level 4
+92400203600,Primary Medical Care Unit - Wijayakatupotha,Level 4
+92400203700,Primary Medical Care Unit - Pulidivasal,Level 4
+92400203800,Primary Medical Care Unit - Walahapitiya,Level 4
+92400203900,Primary Medical Care Unit - Wilpotha,Level 4
+92400204000,Primary Medical Care Unit - Kirimediyana,Level 4
+92400204100,Primary Medical Care Unit - Yatakalana,Level 4
+92400204200,Primary Medical Care Unit - Weppamadu,Level 4
+92400204300,Primary Medical Care Unit - Hiddayathnagar,Level 4
+92400204400,Primary Medical Care Unit - Alankuda,Level 4
+92400204500,Primary Medical Care Unit - Kandakuda,Level 4
+92400204600,Primary Medical Care Unit - Maningala,Level 4
+92400204700,Primary Medical Care Unit - Madawakkulama,Level 4
+92400204800,Office of Medical Officer of Health - Dankotuwa,Level 4
+92400204900,Office of Medical Officer of Health - Wennappuwa,Level 4
+92400205000,Office of Medical Officer of Health - Nattandiya,Level 4
+92400205100,Office of Medical Officer of Health - Mahawewa,Level 4
+92400205200,Office of Medical Officer of Health - Madampe,Level 4
+92400205300,Office of Medical Officer of Health - Chilaw,Level 4
+92400205400,Office of Medical Officer of Health - Arachchikattuwa,Level 4
+92400205500,Office of Medical Officer of Health - Pallama,Level 4
+92400205600,Office of Medical Officer of Health - Anamaduwa,Level 4
+92400205700,Office of Medical Officer of Health - Puttalam,Level 4
+92400205800,Office of Medical Officer of Health - Kalpitiya,Level 4
+92400205900,Office of Medical Officer of Health - Karuwalagaswewa,Level 4
+92400206000,Office of Medical Officer of Health - Mundal,Level 4
+92400206100,Sexually transmitted disses unit - Chilaw,Level 4
+92400206200,Chest clinic - Puttalam,Level 4
+92400206300,Regional Malaria Office - Puttalam,Level 4
