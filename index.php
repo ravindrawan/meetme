@@ -1,5 +1,34 @@
 <?php
 require 'core/config.php';
+
+// ---- RATE LIMIT FUNCTIONS START ----
+function checkRateLimit($pdo, $ip, $action, $max_attempts, $time_frame_minutes) {
+    // 1. පරණ ලිමිට්ස් රෙකෝඩ්ස් ඩේටාබේස් එකෙන් අයින් කිරීම
+    $stmt = $pdo->prepare("DELETE FROM rate_limits WHERE attempt_time < NOW() - INTERVAL ? MINUTE");
+    $stmt->execute([$time_frame_minutes]);
+
+    // 2. දැනට මේ IP එකෙන් කරලා තියෙන ඇටෙම්ප්ට්ස් ගාන බැලීම
+    $stmt = $pdo->prepare("SELECT COUNT(*) FROM rate_limits WHERE ip_address = ? AND action_type = ?");
+    $stmt->execute([$ip, $action]);
+    $attempts = $stmt->fetchColumn();
+
+    if ($attempts >= $max_attempts) {
+        return false; // ලිමිට් පැනලා තියෙන්නේ
+    }
+
+    // 3. ලිමිට් පැනලා නැත්නම් අලුත් ඇටෙම්ප්ට් එක ඩේටාබේස් එකට එකතු කිරීම
+    $stmt = $pdo->prepare("INSERT INTO rate_limits (ip_address, action_type) VALUES (?, ?)");
+    $stmt->execute([$ip, $action]);
+    return true;
+}
+
+function clearRateLimit($pdo, $ip, $action) {
+    // සාර්ථකව ලොග් වුණාම රේට් ලිමිට් රෙකෝඩ්ස් මකා දැමීම
+    $stmt = $pdo->prepare("DELETE FROM rate_limits WHERE ip_address = ? AND action_type = ?");
+    $stmt->execute([$ip, $action]);
+}
+// ---- RATE LIMIT FUNCTIONS END ----
+
 // Get settings
 $stmt = $pdo->query("SELECT * FROM system_settings WHERE id = 1");
 $settings = $stmt->fetch() ?: ['organization_name' => 'VMS', 'organization_logo' => null];
@@ -96,7 +125,7 @@ $pdo->prepare("INSERT INTO users (username, password, role) VALUES ('admin', ?, 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VMS | Login</title>
+    <title>MeetMe | Login</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Noto+Sans+Sinhala:wght@400;700&family=Noto+Sans+Tamil:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -286,7 +315,6 @@ $pdo->prepare("INSERT INTO users (username, password, role) VALUES ('admin', ?, 
     </div>
 
     <div class="main-container">
-        <!-- Public Section -->
         <div class="section section-public">
             <div class="section-icon">
                 <i class="fas fa-users"></i>
@@ -298,7 +326,6 @@ $pdo->prepare("INSERT INTO users (username, password, role) VALUES ('admin', ?, 
             </a>
         </div>
 
-        <!-- Staff Section -->
         <div class="section section-staff">
             <div class="text-center mb-4">
                 <?php if (!empty($settings['organization_logo'])): ?>
