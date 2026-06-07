@@ -1,0 +1,19 @@
+/* assets/css/sidebar_layout.css */
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f8f9fa; /* Light background similar to dashboard */
+  min-height: 100vh;
+  margin: 0;
+}
+
+.sidebar-container {
+  min-height: 100vh;
+}
+
+.main-content {
+  width: 100%;
+  padding: 20px;
+  flex: 1; /* Ensure it takes up remaining space */
+}
+
+/* Ensure navbar doesn't conflict if it has fixed positioning, though current navbar seems static/sticky */
